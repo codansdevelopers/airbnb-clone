@@ -12,20 +12,8 @@ const Input: React.FC<InputProps> = ({ children, label, name, type }) => {
 
   return (
     <div className="flex overflow-clip rounded-full ring-1 ring-gray-200 shadow-lg shadow-gray-200">
-      <label
-        className="sr-only"
-        htmlFor={id}
-      >
-        {label}
-      </label>
-
-      <input
-        className="w-full p-4 focus:outline-none"
-        id={id}
-        name={name}
-        type={type}
-        placeholder={label}
-      />
+      <label className="sr-only" htmlFor={id}>{label}</label>
+      <input className="w-full p-4 focus:outline-none" id={id} name={name} type={type} placeholder={label} />
 
       {children}
     </div>
