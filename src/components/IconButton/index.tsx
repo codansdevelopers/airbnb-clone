@@ -9,19 +9,19 @@ type Props = {
   type: 'button' | 'submit' | 'reset'
 }
 
-const IconButton: React.FC<Props> = ({ background, iconName, title, type }) => {
+const IconButton: React.FC<Props> = ({ background, iconName, title, type }): React.ReactNode => {
   return (
     <button
       title={title}
       type={type}
-      className={cx("m-2 p-4 rounded-full", getBackground(background))}
+      className={cx("m-2 p-2 rounded-full", getBackground(background))}
     >
       {getIconFrom(iconName)}
     </button>
   )
 }
 
-const getIconFrom = (iconName: string) => {
+const getIconFrom = (iconName: string): React.ReactNode => {
   // Lista os ícones disponíveis e retorna o ícone correspondente.
   const iconCollection = {
     heart: <Heart />,
@@ -31,10 +31,10 @@ const getIconFrom = (iconName: string) => {
   return iconCollection
 }
 
-const getBackground = (background: string) => {
+const getBackground = (background: string): React.ReactNode => {
   return cx({
     'bg-transparent': background === 'transparent',
-    'bg-red-500': background === 'ui',
+    'bg-red-500':     background === 'ui',
   })
 }
 
