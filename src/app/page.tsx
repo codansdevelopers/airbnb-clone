@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div className="p-2">
       <Input label="Inicie a sua busca" name="search" type="search">
-        <IconButton background="ui" iconName="search" title="Search" type="submit" />
+        <IconButton background="ui" iconName="search" title="Botão de pesquisa" type="submit" />
       </Input>
     </div>
   )
