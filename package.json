@@ -1,0 +1,27 @@
+{
+  "name": "airbnb-clone",
+  "version": "1.0.0",
+  "description": "🍄 Basic clone of the AirBnb front-end application made in Next.js + Tailwind CSS.",
+  "author": "Jamilton Damasceno<https://github.com/jamiltondamasceno>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.7.2"
+  }
+}
