@@ -8,8 +8,6 @@ export default function Page() {
       <Input label="Inicie a sua busca" name="search" type="search">
         <IconButton background="ui" iconName="search" title="Botão de pesquisa" type="submit" />
       </Input>
-
-      <Image width={1179} height={818} src="/img/assets/01/0001.jpg" alt="Casa segura" />
     </div>
   )
 }
