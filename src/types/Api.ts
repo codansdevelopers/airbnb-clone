@@ -6,4 +6,5 @@ type Icon = {
   id: string
   source: string
   description: string
+  url: string
 }
