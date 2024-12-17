@@ -13,7 +13,6 @@ const Tab: React.FC<TabProps> = ({ title, image }): React.ReactNode => {
   return (
     <div
       aria-label="Tab"
-      aria-description={title}
       className="inline-flex flex-col items-center"
     >
       {image && (
