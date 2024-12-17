@@ -1,13 +1,14 @@
-import IconButton from '@/components/IconButton'
-import Input from '@/components/Input'
-import Image from 'next/image'
+import { Suspense } from 'react'
+import HorizontalTabScroll from '@/containers/HorizontalTabScroll'
+import SearchForm from '@/containers/SearchForm'
 
-export default function Page() {
+export default async function Page() {
   return (
     <div className="p-2">
-      <Input label="Inicie a sua busca" name="search" type="search">
-        <IconButton background="ui" iconName="search" title="Botão de pesquisa" type="submit" />
-      </Input>
+      <SearchForm />
+      <Suspense>
+        <HorizontalTabScroll />
+      </Suspense>
     </div>
   )
 }
