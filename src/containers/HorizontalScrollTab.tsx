@@ -1,7 +1,7 @@
 import type { PublicApi } from '@/types/Api'
 import Tab from '@/components/Tab'
 
-const HorizontalTabScroll: React.FC = async () => {
+const HorizontalScrollTab: React.FC = async () => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
   const response = await getPublicAssets()
@@ -32,4 +32,4 @@ const getPublicAssets = async (): Promise<PublicApi> => {
   }
 }
 
-export default HorizontalTabScroll
+export default HorizontalScrollTab

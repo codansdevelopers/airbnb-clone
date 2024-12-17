@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import HorizontalTabScroll from '@/containers/HorizontalTabScroll'
+import HorizontalScrollTab from '@/containers/HorizontalScrollTab'
 import SearchForm from '@/containers/SearchForm'
 
 export default async function Page() {
@@ -7,7 +7,7 @@ export default async function Page() {
     <div className="p-2">
       <SearchForm />
       <Suspense>
-        <HorizontalTabScroll />
+        <HorizontalScrollTab />
       </Suspense>
     </div>
   )
