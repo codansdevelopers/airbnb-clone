@@ -1,4 +1,7 @@
+import Link from 'next/link'
+
 import type { PublicApi } from '@/types/Api'
+import List from '@/components/List'
 import Tab from '@/components/Tab'
 
 const HorizontalScrollTab: React.FC = async () => {
@@ -6,16 +9,29 @@ const HorizontalScrollTab: React.FC = async () => {
   // A função getPublicAssets é assíncrona, então o await é necessário.
   const response = await getPublicAssets()
 
-  return response.icons.map((icon) => (
-    <Tab
-      key={icon.id}
-      title={icon.description}
-      image={{
-        source: icon.source,
-        description: icon.description,
-      }}
-    />
+  // Mapeia os ícones da resposta da API para o componente Tab.
+  // Cada ícone é um item da lista.
+  const tabs = response.icons.map((icon) => (
+    <List key={icon.id} type="item" label="Tab">
+      <Link href={icon.url}>
+        <Tab
+          title={icon.description}
+          image={{
+            source: icon.source,
+            description: icon.description,
+          }}
+        />
+      </Link>
+    </List>
   ))
+
+  return (
+    <nav>
+      <List type="list" label="Navigation">
+        {tabs}
+      </List>
+    </nav>
+  )
 }
 
 const getPublicAssets = async (): Promise<PublicApi> => {
