@@ -11,7 +11,7 @@ type TabProps = {
 
 const Tab: React.FC<TabProps> = ({ title, image }): React.ReactNode => {
   return (
-    <>
+    <span className="inline-flex flex-col items-center justify-center">
       {image && (
         <Image
           src={image.source}
@@ -23,7 +23,7 @@ const Tab: React.FC<TabProps> = ({ title, image }): React.ReactNode => {
       <span className="text-gray-800 text-xs">
         {title}
       </span>
-    </>
+    </span>
   )
 }
 
