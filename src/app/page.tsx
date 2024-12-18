@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import HorizontalScrollTab from '@/containers/HorizontalScrollTab'
-import SearchForm from '@/containers/SearchForm'
+import HorizontalScrollTab from '@/widgets/HorizontalScrollTab'
+import SearchForm from '@/widgets/SearchForm'
 
 export default async function Page() {
   return (
