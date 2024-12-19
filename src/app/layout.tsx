@@ -3,10 +3,10 @@ import { montserrat } from '@/fonts/google'
 
 export default function RootLayout({
   children,
-  categories,
+  header,
 }: {
   children: React.ReactNode,
-  categories: React.ReactNode,
+  header: React.ReactNode,
 }) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
       <div className="p-2">
         {children}
-        {categories}
+        {header}
       </div>
       </body>
     </html>
