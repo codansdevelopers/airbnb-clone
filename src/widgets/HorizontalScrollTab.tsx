@@ -36,13 +36,7 @@ const HorizontalScrollTab: React.FC = async () => {
 
 const getPublicAssets = async (): Promise<PublicApi> => {
   try {
-    const response = await fetch(`${process.env.HOSTNAME}/api.json`, {
-      cache: 'no-store',
-      next: {
-        revalidate: 86400,
-        tags: ['api'],
-      }
-    })
+    const response = await fetch(`${process.env.HOSTNAME}/api.json`)
     const api: PublicApi = await response.json()
     // Retorna os dados da API.
     return api
