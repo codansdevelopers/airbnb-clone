@@ -14,7 +14,7 @@ const Tab: React.FC<TabProps> = ({ title, image }): React.ReactNode => {
     <span className="mx-6 gap-y-2 inline-flex flex-col items-center justify-center">
       {image && (
         <Image
-          className="filter grayscale opacity-65"
+          className="grayscale opacity-65"
           src={image.source}
           alt={image.description}
           width={24}
