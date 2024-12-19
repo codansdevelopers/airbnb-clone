@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import type { PublicApi } from '@/types/Api'
+import Boundary from '@/components/Boundary'
 import List from '@/components/List'
 import Tab from '@/components/Tab'
 
@@ -26,10 +27,12 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <nav>
-      <List label="Navigation" scroll="horizontal" type="list">
-        {tabs}
-      </List>
+    <nav className="mt-6 pt-6 border-t border-gray-200">
+      <Boundary>
+        <List label="Navigation" scroll="horizontal" type="list">
+          {tabs}
+        </List>
+      </Boundary>
     </nav>
   )
 }
