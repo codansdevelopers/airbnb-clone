@@ -13,7 +13,7 @@ const HorizontalScrollTab: React.FC = async () => {
   // Cada ícone é um item da lista.
   const tabs = response.icons.map((icon) => (
     <List key={icon.id} label="Tab" scroll="horizontal" type="item">
-      <Link href={icon.url}>
+      <Link href="#">
         <Tab
           title={icon.description}
           image={{
