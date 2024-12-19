@@ -1,10 +1,18 @@
+import cx from 'clsx'
+
 type BoundaryProps = {
   children: React.ReactNode
+  direction: 'around' | 'top-sides'
+  role?: React.AriaRole
 }
 
-const Boundary: React.FC<BoundaryProps> = ({ children }) => {
+const Boundary: React.FC<BoundaryProps> = ({ direction, role, children }) => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-6">
+    <div role={role} className={cx('max-w-screen-2xl mx-auto', {
+      // Seleciona a classe de acordo com a propriedade direction
+      'px-6'     : direction === 'around',
+      'px-6 pt-6': direction === 'top-sides',
+    })}>
       {children}
     </div>
   )
