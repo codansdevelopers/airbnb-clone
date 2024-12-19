@@ -7,7 +7,7 @@ import Input from '@/components/Input'
 const SearchForm: React.FC = (): React.ReactNode => {
   return (
     <Boundary direction="top-sides">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Input label="Inicie a sua busca" name="search" type="search">
           <IconButton
             background="red"
