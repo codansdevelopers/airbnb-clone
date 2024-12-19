@@ -35,8 +35,14 @@ const HorizontalScrollTab: React.FC = async () => {
 }
 
 const getPublicAssets = async (): Promise<PublicApi> => {
+  // Define a URL da API de acordo com o ambiente.
+  // Se o ambiente for de produção, a URL é a do servidor de produção.
+  const HOSTNAME = process.env.NODE_ENV === 'production' ?
+    'https://airbnb.codans.com.br' :
+    'http://localhost:3000'
+
   try {
-    const response = await fetch(`${process.env.HOSTNAME}/api.json`)
+    const response = await fetch(`${HOSTNAME}/api.json`)
     const api: PublicApi = await response.json()
     // Retorna os dados da API.
     return api
