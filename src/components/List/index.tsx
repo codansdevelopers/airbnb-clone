@@ -33,8 +33,8 @@ const ListItem: React.FC<ListProps> = ({ label, scroll, children }): React.React
 
 const getScrollDirection = (scroll?: 'horizontal' | 'vertical'): string => {
   return cx({
-    'flex gap-4 list-none overflow-auto whitespace-nowrap': scroll === 'horizontal',
-    'block list-none'                                     : scroll === 'vertical',
+    'list-none overflow-auto whitespace-nowrap': scroll === 'horizontal',
+    'block list-none'                          : scroll === 'vertical',
   })
 }
 
