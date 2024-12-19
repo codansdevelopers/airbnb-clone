@@ -1,12 +1,14 @@
-import IconButton from '@/components/IconButton'
-import Input from '@/components/Input'
+import { Suspense } from 'react'
+import HorizontalScrollTab from '@/widgets/HorizontalScrollTab'
+import SearchForm from '@/widgets/SearchForm'
 
-export default function Page() {
+export default async function Page() {
   return (
     <div className="p-2">
-      <Input label="Inicie a sua busca" name="search" type="search">
-        <IconButton background="ui" iconName="search" title="Botão de pesquisa" type="submit" />
-      </Input>
+      <SearchForm />
+      <Suspense>
+        <HorizontalScrollTab />
+      </Suspense>
     </div>
   )
 }
