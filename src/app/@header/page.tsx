@@ -8,6 +8,7 @@ export default async function Page() {
   return (
     <>
       <SearchForm />
+
       <Suspense>
         <HorizontalScrollTab />
       </Suspense>
