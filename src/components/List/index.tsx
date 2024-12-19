@@ -1,30 +1,48 @@
+import cx from 'clsx'
+import Style from './style.module.css'
+
 type ListProps = {
-  type: 'list' | 'item'
+  children?: React.ReactNode
   label: string
-  children?: React.ReactNode | React.ReactNode[]
+  scroll?: 'horizontal' | 'vertical'
+  type: 'list' | 'item'
 }
 
-const List: React.FC<ListProps> = ({ type, label, children }): React.ReactNode => {
+const List: React.FC<ListProps> = ({ children, label, scroll, type }): React.ReactNode => {
   // Se o tipo for lista, renderiza o componente ul.
   return type === 'list' ? (
-    <ul aria-label={label} className="list-none">
+    <ul aria-label={label} className={cx(Style.Scrollbar, getScrollDirection(scroll))}>
       {children}
     </ul>
 
   // Se o tipo for item, renderiza o componente ListItem.
   ) : (
-    <ListItem type={type} label={label}>
+    <ListItem label={label} scroll={scroll} type={type}>
       {children}
     </ListItem>
   )
 }
 
-const ListItem: React.FC<ListProps> = ({ label, children }): React.ReactNode => {
+const ListItem: React.FC<ListProps> = ({ label, scroll, children }): React.ReactNode => {
   return (
-    <li aria-label={label}>
+    <li aria-label={label} className={getScrollListItem(scroll)}>
       {children}
     </li>
   )
+}
+
+const getScrollDirection = (scroll?: 'horizontal' | 'vertical'): string => {
+  return cx({
+    'flex gap-4 list-none overflow-auto whitespace-nowrap': scroll === 'horizontal',
+    'block list-none'                                     : scroll === 'vertical',
+  })
+}
+
+const getScrollListItem = (scroll?: 'horizontal' | 'vertical'): string => {
+  return cx({
+    'inline-block': scroll === 'horizontal',
+    'block'       : scroll === 'vertical',
+  })
 }
 
 export default List
