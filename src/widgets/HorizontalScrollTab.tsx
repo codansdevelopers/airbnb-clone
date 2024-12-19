@@ -12,7 +12,7 @@ const HorizontalScrollTab: React.FC = async () => {
   // Mapeia os ícones da resposta da API para o componente Tab.
   // Cada ícone é um item da lista.
   const tabs = response.icons.map((icon) => (
-    <List key={icon.id} type="item" label="Tab">
+    <List key={icon.id} label="Tab" scroll="horizontal" type="item">
       <Link href={icon.url}>
         <Tab
           title={icon.description}
@@ -27,7 +27,7 @@ const HorizontalScrollTab: React.FC = async () => {
 
   return (
     <nav>
-      <List type="list" label="Navigation">
+      <List label="Navigation" scroll="horizontal" type="list">
         {tabs}
       </List>
     </nav>
