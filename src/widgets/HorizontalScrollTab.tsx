@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import type { PublicApi } from '@/types/Api'
+import Boundary from '@/components/Boundary'
 import List from '@/components/List'
 import Tab from '@/components/Tab'
 
@@ -13,7 +14,7 @@ const HorizontalScrollTab: React.FC = async () => {
   // Cada ícone é um item da lista.
   const tabs = response.icons.map((icon) => (
     <List key={icon.id} label="Tab" scroll="horizontal" type="item">
-      <Link href={icon.url}>
+      <Link href="#">
         <Tab
           title={icon.description}
           image={{
@@ -26,17 +27,25 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <nav>
-      <List label="Navigation" scroll="horizontal" type="list">
-        {tabs}
-      </List>
+    <nav className="mt-6 pt-6 border-t border-gray-200">
+      <Boundary role="navigation" direction="around">
+        <List label="Categories" scroll="horizontal" type="list">
+          {tabs}
+        </List>
+      </Boundary>
     </nav>
   )
 }
 
 const getPublicAssets = async (): Promise<PublicApi> => {
+  // Define a URL da API de acordo com o ambiente.
+  // Se o ambiente for de produção, a URL é a do servidor de produção.
+  const HOSTNAME = process.env.NODE_ENV === 'production' ?
+    'https://airbnb.codans.com.br' :
+    'http://localhost:3000'
+
   try {
-    const response = await fetch(`${process.env.HOSTNAME}/api.json`)
+    const response = await fetch(`${HOSTNAME}/api.json`)
     const api: PublicApi = await response.json()
     // Retorna os dados da API.
     return api
