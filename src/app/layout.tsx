@@ -15,10 +15,12 @@ export default function RootLayout({
         <meta name="description" content="Reserve um Airbnb para cada tipo de viagem → 7 milhões de locações por temporada → 2 milhões de Preferidos dos Hóspedes → Mais de 220 países e regiões em todo o mundo." />
       </head>
       <body>
-      <div className="p-2">
-        {children}
-        {header}
-      </div>
+        <header>
+          {header}
+        </header>
+        <div className="p-2">
+          {children}
+        </div>
       </body>
     </html>
   )
