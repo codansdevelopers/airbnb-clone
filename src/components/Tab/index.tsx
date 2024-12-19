@@ -11,16 +11,17 @@ type TabProps = {
 
 const Tab: React.FC<TabProps> = ({ title, image }): React.ReactNode => {
   return (
-    <span className="inline-flex flex-col items-center justify-center">
+    <span className="mx-6 gap-y-2 inline-flex flex-col items-center justify-center">
       {image && (
         <Image
+          className="filter grayscale opacity-65"
           src={image.source}
           alt={image.description}
           width={24}
           height={24}
         />
       )}
-      <span className="text-gray-800 text-xs">
+      <span className="text-gray-600 text-xs font-medium">
         {title}
       </span>
     </span>
