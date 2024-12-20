@@ -19,6 +19,7 @@ const List: React.FC<ListProps> = ({
     <ul
       aria-label={label}
       className={cx(
+        "mr-32 sm:mr-24",
         Style.Scrollbar,
         getScrollDirection(scroll),
       )}
