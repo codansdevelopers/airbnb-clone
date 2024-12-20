@@ -1,7 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import type { PublicApi } from '@/types/Api'
 import Boundary from '@/components/Boundary'
+import IconButton from '@/components/IconButton'
 import List from '@/components/List'
 import Tab from '@/components/Tab'
 
@@ -27,10 +29,45 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <nav className="mt-6 pt-6 border-t border-gray-200">
+    <nav className="relative mt-6 pt-6 border-t border-gray-200">
       <Boundary role="navigation" direction="around">
         <List label="Categories" scroll="horizontal" type="list">
           {tabs}
+
+          <List label="Interactive" scroll="horizontal" type="item">
+            <div className="h-full mt-2 absolute top-0 right-0 flex items-center bg-white">
+              <IconButton
+                background="transparent"
+                border={true}
+                title="Avançar"
+                type="button"
+                icon={(
+                  <Image
+                    src="/assets/chevron-right.png"
+                    alt="Seta para direita"
+                    width={20}
+                    height={20}
+                  />
+                )}
+              />
+              <IconButton
+                background="transparent"
+                border={true}
+                title="Filtro"
+                type="button"
+                icon={(
+                  <Image
+                    src="/assets/adjustments.png"
+                    alt="Ícone de ajustes"
+                    width={20}
+                    height={20}
+                  />
+                )}
+              >
+                Filtros
+              </IconButton>
+            </div>
+          </List>
         </List>
       </Boundary>
     </nav>

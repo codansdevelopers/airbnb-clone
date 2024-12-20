@@ -11,28 +11,30 @@ const TopBar: React.FC = () => {
   const pathname = usePathname()
 
   return (
-    <Boundary direction="top-sides">
-      <div className="flex justify-between items-center">
-        <Logo />
+    <div className="hidden sm:block">
+      <Boundary direction="top-sides">
+        <div className="flex justify-between items-center">
+          <Logo />
 
-        <div className="flex gap-4">
-          <Link href="/">
-            <span className={highlightText(pathname, '/')}>
-              Acomodações
-            </span>
-          </Link>
-          <Link href="/experiences">
-            <span className={highlightText(pathname, '/experiences')}>
-              Experiências
-            </span>
-          </Link>
-        </div>
+          <div className="flex gap-4">
+            <Link href="/">
+              <span className={highlightText(pathname, '/')}>
+                Acomodações
+              </span>
+            </Link>
+            <Link href="/experiences">
+              <span className={highlightText(pathname, '/experiences')}>
+                Experiências
+              </span>
+            </Link>
+          </div>
 
-        <div>
-          3th Item
+          <div>
+            3th Item
+          </div>
         </div>
-      </div>
-    </Boundary>
+      </Boundary>
+    </div>
   )
 }
 
