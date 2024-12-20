@@ -34,7 +34,7 @@ const HorizontalScrollTab: React.FC = async () => {
         <List label="Categories" scroll="horizontal" type="list">
           {tabs}
 
-          <div className="h-full absolute top-0 right-0 flex items-end bg-white">
+          <div className="h-full mt-2 absolute top-0 right-0 flex items-center bg-white">
             <IconButton
               background="transparent"
               border={true}
@@ -49,6 +49,22 @@ const HorizontalScrollTab: React.FC = async () => {
                 />
               )}
             />
+            <IconButton
+              background="transparent"
+              border={true}
+              title="Filtro"
+              type="button"
+              icon={(
+                <Image
+                  src="/assets/adjustments.png"
+                  alt="Ícone de ajustes"
+                  width={20}
+                  height={20}
+                />
+              )}
+            >
+              Filtros
+            </IconButton>
           </div>
         </List>
       </Boundary>
