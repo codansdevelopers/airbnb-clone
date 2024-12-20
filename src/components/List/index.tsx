@@ -8,10 +8,21 @@ type ListProps = {
   type: 'list' | 'item'
 }
 
-const List: React.FC<ListProps> = ({ children, label, scroll, type }): React.ReactNode => {
+const List: React.FC<ListProps> = ({
+  children,
+  label,
+  scroll,
+  type,
+}): React.ReactNode => {
   // Se o tipo for lista, renderiza o componente ul.
   return type === 'list' ? (
-    <ul aria-label={label} className={cx(Style.Scrollbar, getScrollDirection(scroll))}>
+    <ul
+      aria-label={label}
+      className={cx(
+        Style.Scrollbar,
+        getScrollDirection(scroll),
+      )}
+    >
       {children}
     </ul>
 
@@ -31,14 +42,14 @@ const ListItem: React.FC<ListProps> = ({ label, scroll, children }): React.React
   )
 }
 
-const getScrollDirection = (scroll?: 'horizontal' | 'vertical'): string => {
+const getScrollDirection = (scroll?: string): string => {
   return cx({
     'list-none overflow-auto whitespace-nowrap': scroll === 'horizontal',
     'block list-none'                          : scroll === 'vertical',
   })
 }
 
-const getScrollListItem = (scroll?: 'horizontal' | 'vertical'): string => {
+const getScrollListItem = (scroll?: string): string => {
   return cx({
     'inline-block': scroll === 'horizontal',
     'block'       : scroll === 'vertical',
