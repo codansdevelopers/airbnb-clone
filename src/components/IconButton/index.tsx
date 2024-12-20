@@ -5,6 +5,7 @@ type Props = {
   border?: boolean
   children?: React.ReactNode
   icon: React.ReactNode
+  noOpacity?: boolean
   title: string
   type: 'button' | 'submit' | 'reset'
 }
@@ -14,6 +15,7 @@ const IconButton: React.FC<Props> = ({
   border,
   children,
   icon,
+  noOpacity,
   title,
   type,
 }): React.ReactNode => {
@@ -28,7 +30,7 @@ const IconButton: React.FC<Props> = ({
       )}
     >
       <div className={getFlexibleLayout(children)}>
-        <span className="opacity-80">
+        <span className={cx({ 'opacity-80': !noOpacity })}>
           {icon}
         </span>
 
