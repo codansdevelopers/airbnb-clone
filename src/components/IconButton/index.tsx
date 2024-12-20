@@ -55,13 +55,13 @@ const getRound = (children?: React.ReactNode): string => {
 const getBackground = (background: string): string => {
   return cx({
     'bg-transparent': background === 'transparent',
-    'bg-red-500'    :     background === 'red',
+    'bg-red-500'    : background === 'red',
   })
 }
 
 const getBorder = (border?: boolean): string => {
   return cx({
-    'border border-gray-400': border,
+    'border border-gray-400 hover:border-gray-600': border,
   })
 }
 
