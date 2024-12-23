@@ -1,4 +1,17 @@
 {
+  "accommodation": [
+    {
+      "date": {
+        "from": "2021-06-01",
+        "to": "2021-06-30"
+      },
+      "host": "Millena",
+      "id": "45172871",
+      "location": "Colônia de Pescadores, Brasil",
+      "rating": 4.5,
+      "thumbnail": "/img/photos/01/0001.jpg"
+    }
+  ],
   "icons": [
     {
       "id": "0001",
