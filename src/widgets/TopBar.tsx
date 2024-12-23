@@ -19,15 +19,18 @@ const TopBar: React.FC = () => {
           <Logo />
 
           <div className="flex gap-4">
-            <Link href="/">
-              <span className={highlightText(pathname, '/')}>
-                Acomodações
-              </span>
+            <Link
+              className={highlightText(pathname, '/')}
+              href="/"
+            >
+              Acomodações
             </Link>
-            <Link href="/experiences">
-              <span className={highlightText(pathname, '/experiences')}>
-                Experiências
-              </span>
+            
+            <Link
+              className={highlightText(pathname, '/experiences')}
+              href="/experiences"
+            >
+              Experiências
             </Link>
           </div>
 
@@ -57,7 +60,8 @@ const TopBar: React.FC = () => {
 
 const highlightText = (pathname: string, target: string) => {
   return cx({
-    'font-semibold': pathname.startsWith(target),
+    'opacity-65': !pathname.startsWith(target),
+    'font-semibold opacity-100': pathname.startsWith(target),
   })
 }
 
