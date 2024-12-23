@@ -29,47 +29,49 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <Boundary direction="around">
-      <nav className="relative mt-6 pt-6 border-t border-gray-200">
-        <List label="Categories" scroll="horizontal" type="list">
-          {tabs}
-          <List label="Interactive" scroll="horizontal" type="item">
-            <div className="h-full mt-2 absolute top-0 right-0 flex items-center bg-white">
-              <IconButton
-                background="transparent"
-                border={true}
-                title="Avançar"
-                type="button"
-                icon={(
-                  <Image
-                    src="/assets/chevron-right.png"
-                    alt="Seta para direita"
-                    width={20}
-                    height={20}
-                  />
-                )}
-              />
-              <IconButton
-                background="transparent"
-                border={true}
-                title="Filtro"
-                type="button"
-                icon={(
-                  <Image
-                    src="/assets/adjustments.png"
-                    alt="Ícone de ajustes"
-                    width={20}
-                    height={20}
-                  />
-                )}
-              >
-                Filtros
-              </IconButton>
-            </div>
+    <div className="mt-6 pt-6 border-t border-gray-200">
+      <Boundary direction="around">
+        <nav className="relative">
+          <List label="Categories" scroll="horizontal" type="list">
+            {tabs}
+            <List label="Interactive" scroll="horizontal" type="item">
+              <div className="h-full absolute top-0 right-0 flex items-center bg-white">
+                <IconButton
+                  background="transparent"
+                  border={true}
+                  title="Avançar"
+                  type="button"
+                  icon={(
+                    <Image
+                      src="/assets/chevron-right.png"
+                      alt="Seta para direita"
+                      width={20}
+                      height={20}
+                    />
+                  )}
+                />
+                <IconButton
+                  background="transparent"
+                  border={true}
+                  title="Filtro"
+                  type="button"
+                  icon={(
+                    <Image
+                      src="/assets/adjustments.png"
+                      alt="Ícone de ajustes"
+                      width={20}
+                      height={20}
+                    />
+                  )}
+                >
+                  Filtros
+                </IconButton>
+              </div>
+            </List>
           </List>
-        </List>
-      </nav>
-    </Boundary>
+       </nav>
+      </Boundary>
+    </div>
   )
 }
 
