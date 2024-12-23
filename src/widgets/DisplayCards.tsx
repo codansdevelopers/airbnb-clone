@@ -8,9 +8,9 @@ const DisplayCards: React.FC = async () => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
   const response = await getPublicAssets()
-  
+
   return (
-    <section>
+    <section className="my-4">
       <Boundary direction="top-sides">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {response.accommodation.map((item) => (
@@ -23,8 +23,8 @@ const DisplayCards: React.FC = async () => {
             >
               <Image
                 className="border-none object-cover aspect-square"
-                width={640}
-                height={480}
+                width={300}
+                height={300}
                 src={item.thumbnail[0].source}
                 alt={item.thumbnail[0].description}
               />
