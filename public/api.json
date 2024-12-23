@@ -1,4 +1,686 @@
 {
+  "accommodation": [
+    {
+      "number": 1,
+      "date": "8 - 13 de jan",
+      "host": "Millena",
+      "id": "45172871",
+      "location": "Colônia de Pescadores, Brasil",
+      "price": 229,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/01/0001.jpg",
+          "description": "Casa de campo, sítio grande para família toda.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "date": "15 - 20 de jan",
+      "host": "Carlos",
+      "id": "98237465",
+      "location": "Rio de Janeiro, Brasil",
+      "price": 300,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/02/0029.jpg",
+          "description": "Apartamento com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "date": "22 - 27 de jan",
+      "host": "Ana",
+      "id": "12345678",
+      "location": "São Paulo, Brasil",
+      "price": 150,
+      "rating": 4.3,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/03/0058.jpg",
+          "description": "Estúdio moderno no centro da cidade.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "date": "29 de jan - 3 de fev",
+      "host": "João",
+      "id": "87654321",
+      "location": "Belo Horizonte, Brasil",
+      "price": 200,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/04/0086.jpg",
+          "description": "Casa aconchegante com jardim.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "date": "5 - 10 de fev",
+      "host": "Mariana",
+      "id": "23456789",
+      "location": "Salvador, Brasil",
+      "price": 180,
+      "rating": 4.4,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/05/0114.jpg",
+          "description": "Apartamento próximo à praia.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "date": "12 - 17 de fev",
+      "host": "Pedro",
+      "id": "34567890",
+      "location": "Fortaleza, Brasil",
+      "price": 220,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/06/0143.jpg",
+          "description": "Casa com piscina e churrasqueira.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "date": "19 - 24 de fev",
+      "host": "Lucas",
+      "id": "45678901",
+      "location": "Curitiba, Brasil",
+      "price": 160,
+      "rating": 4.2,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/07/0172.jpg",
+          "description": "Apartamento no centro histórico.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "date": "26 de fev - 3 de mar",
+      "host": "Fernanda",
+      "id": "56789012",
+      "location": "Florianópolis, Brasil",
+      "price": 250,
+      "rating": 4.8,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/08/0200.jpg",
+          "description": "Casa de praia com vista incrível.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "date": "5 - 10 de mar",
+      "host": "Rafael",
+      "id": "67890123",
+      "location": "Porto Alegre, Brasil",
+      "price": 190,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/09/0229.jpg",
+          "description": "Apartamento espaçoso e moderno.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "date": "12 - 17 de mar",
+      "host": "Beatriz",
+      "id": "78901234",
+      "location": "Manaus, Brasil",
+      "price": 210,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/10/0258.jpg",
+          "description": "Casa na floresta com trilhas.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "date": "19 - 24 de mar",
+      "host": "Gabriel",
+      "id": "89012345",
+      "location": "Recife, Brasil",
+      "price": 230,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/11/0286.jpg",
+          "description": "Apartamento com piscina na cobertura.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "date": "26 - 31 de mar",
+      "host": "Larissa",
+      "id": "90123456",
+      "location": "Natal, Brasil",
+      "price": 240,
+      "rating": 4.8,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/12/0314.jpg",
+          "description": "Casa com acesso direto à praia.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "date": "2 - 7 de jan",
+      "host": "Thiago",
+      "id": "01234567",
+      "location": "Brasília, Brasil",
+      "price": 170,
+      "rating": 4.4,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/13/0343.jpg",
+          "description": "Apartamento próximo ao centro político.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "date": "9 - 14 de jan",
+      "host": "Juliana",
+      "id": "12345679",
+      "location": "Goiânia, Brasil",
+      "price": 180,
+      "rating": 4.3,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/14/0372.jpg",
+          "description": "Casa com quintal grande.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "date": "16 - 21 de jan",
+      "host": "Felipe",
+      "id": "23456780",
+      "location": "Vitória, Brasil",
+      "price": 190,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/15/0400.jpg",
+          "description": "Apartamento com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "date": "23 - 28 de jan",
+      "host": "Patrícia",
+      "id": "34567891",
+      "location": "Belém, Brasil",
+      "price": 200,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/16/0429.jpg",
+          "description": "Casa com piscina e jardim.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "date": "30 de jan - 4 de fev",
+      "host": "Rodrigo",
+      "id": "45678902",
+      "location": "Maceió, Brasil",
+      "price": 210,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/17/0458.jpg",
+          "description": "Apartamento moderno e aconchegante.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "date": "6 - 11 de fev",
+      "host": "Camila",
+      "id": "56789013",
+      "location": "João Pessoa, Brasil",
+      "price": 220,
+      "rating": 4.8,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/18/0486.jpg",
+          "description": "Casa com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "date": "13 - 18 de fev",
+      "host": "Bruno",
+      "id": "67890124",
+      "location": "Aracaju, Brasil",
+      "price": 230,
+      "rating": 4.9,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/19/0514.jpg",
+          "description": "Apartamento próximo à praia.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "date": "20 - 25 de fev",
+      "host": "Renata",
+      "id": "78901235",
+      "location": "Teresina, Brasil",
+      "price": 240,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/20/0543.jpg",
+          "description": "Casa com piscina e churrasqueira.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "date": "27 de fev - 4 de mar",
+      "host": "André",
+      "id": "89012346",
+      "location": "Campo Grande, Brasil",
+      "price": 250,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/21/0572.jpg",
+          "description": "Apartamento no centro da cidade.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "date": "5 - 10 de mar",
+      "host": "Aline",
+      "id": "90123457",
+      "location": "Cuiabá, Brasil",
+      "price": 260,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/22/0600.jpg",
+          "description": "Casa com jardim e piscina.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "date": "12 - 17 de mar",
+      "host": "Eduardo",
+      "id": "01234568",
+      "location": "São Luís, Brasil",
+      "price": 270,
+      "rating": 4.4,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/23/0629.jpg",
+          "description": "Apartamento com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "date": "19 - 24 de mar",
+      "host": "Vanessa",
+      "id": "12345680",
+      "location": "Macapá, Brasil",
+      "price": 280,
+      "rating": 4.3,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/24/0658.jpg",
+          "description": "Casa com piscina e churrasqueira.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "date": "26 - 31 de mar",
+      "host": "Marcelo",
+      "id": "23456781",
+      "location": "Boa Vista, Brasil",
+      "price": 290,
+      "rating": 4.2,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/25/0686.jpg",
+          "description": "Apartamento moderno e aconchegante.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "date": "2 - 7 de jan",
+      "host": "Paula",
+      "id": "34567892",
+      "location": "Palmas, Brasil",
+      "price": 300,
+      "rating": 4.1,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/26/0714.jpg",
+          "description": "Casa com vista para o lago.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "date": "9 - 14 de jan",
+      "host": "Ricardo",
+      "id": "45678903",
+      "location": "Porto Velho, Brasil",
+      "price": 310,
+      "rating": 4.0,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/27/0743.jpg",
+          "description": "Apartamento próximo ao centro.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "date": "16 - 21 de jan",
+      "host": "Simone",
+      "id": "56789014",
+      "location": "Rio Branco, Brasil",
+      "price": 320,
+      "rating": 4.3,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/28/0772.jpg",
+          "description": "Casa com jardim e piscina.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "date": "23 - 28 de jan",
+      "host": "Gustavo",
+      "id": "67890125",
+      "location": "São Paulo, Brasil",
+      "price": 330,
+      "rating": 4.4,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/29/0800.jpg",
+          "description": "Apartamento moderno no centro.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "date": "30 de jan - 4 de fev",
+      "host": "Tatiana",
+      "id": "78901236",
+      "location": "Rio de Janeiro, Brasil",
+      "price": 340,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/30/0829.jpg",
+          "description": "Casa com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "date": "6 - 11 de fev",
+      "host": "Leonardo",
+      "id": "89012347",
+      "location": "Belo Horizonte, Brasil",
+      "price": 350,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/31/0858.jpg",
+          "description": "Apartamento próximo ao centro.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "date": "13 - 18 de fev",
+      "host": "Isabela",
+      "id": "90123458",
+      "location": "Curitiba, Brasil",
+      "price": 360,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/32/0886.jpg",
+          "description": "Casa com jardim e piscina.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "date": "20 - 25 de fev",
+      "host": "Fábio",
+      "id": "01234569",
+      "location": "Florianópolis, Brasil",
+      "price": 370,
+      "rating": 4.8,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/33/0914.jpg",
+          "description": "Apartamento com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "date": "27 de fev - 4 de mar",
+      "host": "Carla",
+      "id": "12345681",
+      "location": "Porto Alegre, Brasil",
+      "price": 380,
+      "rating": 4.9,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/34/0943.jpg",
+          "description": "Casa com piscina e churrasqueira.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "date": "5 - 10 de mar",
+      "host": "Diego",
+      "id": "23456782",
+      "location": "Manaus, Brasil",
+      "price": 390,
+      "rating": 4.7,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/35/0972.jpg",
+          "description": "Apartamento moderno e aconchegante.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "date": "12 - 17 de mar",
+      "host": "Sabrina",
+      "id": "34567893",
+      "location": "Recife, Brasil",
+      "price": 400,
+      "rating": 4.6,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/36/1000.jpg",
+          "description": "Casa com vista para o mar.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "date": "19 - 24 de mar",
+      "host": "Alex",
+      "id": "45678904",
+      "location": "Natal, Brasil",
+      "price": 410,
+      "rating": 4.5,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/37/1029.jpg",
+          "description": "Apartamento próximo à praia.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "date": "26 - 31 de mar",
+      "host": "Luana",
+      "id": "56789015",
+      "location": "Brasília, Brasil",
+      "price": 420,
+      "rating": 4.4,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/38/1058.jpg",
+          "description": "Casa com piscina e jardim.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "date": "2 - 7 de jan",
+      "host": "Henrique",
+      "id": "67890126",
+      "location": "Goiânia, Brasil",
+      "price": 430,
+      "rating": 4.3,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/39/1086.jpg",
+          "description": "Apartamento moderno no centro.",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "date": "9 - 14 de jan",
+      "host": "Marta",
+      "id": "78901237",
+      "location": "Vitória, Brasil",
+      "price": 440,
+      "rating": 4.2,
+      "thumbnail": [
+        {
+          "id": "",
+          "source": "/img/photos/40/1114.jpg",
+          "description": "Casa com vista para o mar.",
+          "url": ""
+        }
+      ]
+    }
+  ],
   "icons": [
     {
       "id": "0001",

@@ -30,7 +30,7 @@ const HorizontalScrollTab: React.FC = async () => {
 
   return (
     <nav className="relative mt-6 pt-6 border-t border-gray-200">
-      <Boundary role="navigation" direction="around">
+      <Boundary direction="around">
         <List label="Categories" scroll="horizontal" type="list">
           {tabs}
 
