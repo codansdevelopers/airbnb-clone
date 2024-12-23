@@ -61,7 +61,7 @@ const getBackground = (background: string): string => {
 
 const getBorder = (border?: boolean): string => {
   return cx({
-    'border border-gray-400 hover:border-gray-600': border,
+    'border border-gray-200 hover:border-gray-400': border,
   })
 }
 
