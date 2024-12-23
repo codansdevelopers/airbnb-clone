@@ -10,7 +10,7 @@ type Accommodation = {
   location: string
   price: number
   rating: number
-  thumbnail: Image
+  thumbnail: Image[]
 }
 
 type Image = {
