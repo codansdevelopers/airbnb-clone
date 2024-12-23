@@ -67,7 +67,7 @@ const getBorder = (border?: boolean): string => {
 
 const getFlexibleLayout = (children?: React.ReactNode): string => {
   return cx({
-    'flex justify-center items-center': children,
+    'flex justify-center items-center gap-1.5': children,
   })
 }
 
