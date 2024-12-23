@@ -1,10 +1,12 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import cx from 'clsx'
 
 import Boundary from '@/components/Boundary'
+import IconButton from '@/components/IconButton'
 import Logo from '@/components/Logo'
 
 const TopBar: React.FC = () => {
@@ -30,7 +32,22 @@ const TopBar: React.FC = () => {
           </div>
 
           <div>
-            3th Item
+            <IconButton
+              background="transparent"
+              border={true}
+              title="Filtro"
+              type="button"
+              icon={(
+                <Image
+                  src="/assets/user-circle.png"
+                  alt="Ícone de ajustes"
+                  width={20}
+                  height={20}
+                />
+              )}
+              >
+                Entrar
+            </IconButton>
           </div>
         </div>
       </Boundary>

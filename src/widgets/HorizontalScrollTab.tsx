@@ -29,11 +29,10 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <nav className="relative mt-6 pt-6 border-t border-gray-200">
-      <Boundary direction="around">
+    <Boundary direction="around">
+      <nav className="relative mt-6 pt-6 border-t border-gray-200">
         <List label="Categories" scroll="horizontal" type="list">
           {tabs}
-
           <List label="Interactive" scroll="horizontal" type="item">
             <div className="h-full mt-2 absolute top-0 right-0 flex items-center bg-white">
               <IconButton
@@ -69,8 +68,8 @@ const HorizontalScrollTab: React.FC = async () => {
             </div>
           </List>
         </List>
-      </Boundary>
-    </nav>
+      </nav>
+    </Boundary>
   )
 }
 

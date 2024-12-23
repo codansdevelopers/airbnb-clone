@@ -61,13 +61,13 @@ const getBackground = (background: string): string => {
 
 const getBorder = (border?: boolean): string => {
   return cx({
-    'border border-gray-400 hover:border-gray-600': border,
+    'border border-gray-200 hover:border-gray-400': border,
   })
 }
 
 const getFlexibleLayout = (children?: React.ReactNode): string => {
   return cx({
-    'flex justify-center items-center': children,
+    'flex justify-center items-center gap-1.5': children,
   })
 }
 
