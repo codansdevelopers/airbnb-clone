@@ -5,7 +5,13 @@
       "date": "8 - 13 de jan",
       "host": "Millena",
       "id": "45172871",
-      "location": "Colônia de Pescadores, Brasil",
+      "location": {
+        "description": "Colônia de Pescadores, Brasil",
+        "city": "Bonito",
+        "state": "Mato Grosso do Sul",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 229,
       "rating": 4.5,
       "thumbnail": [
@@ -22,7 +28,13 @@
       "date": "15 - 20 de jan",
       "host": "Carlos",
       "id": "98237465",
-      "location": "Rio de Janeiro, Brasil",
+      "location": {
+        "description": "Memorial de Copacabana, Brasil",
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 300,
       "rating": 4.7,
       "thumbnail": [
@@ -39,7 +51,13 @@
       "date": "22 - 27 de jan",
       "host": "Ana",
       "id": "12345678",
-      "location": "São Paulo, Brasil",
+      "location": {
+        "description": "Campo Celeste, Brasil",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 150,
       "rating": 4.3,
       "thumbnail": [
@@ -56,7 +74,13 @@
       "date": "29 de jan - 3 de fev",
       "host": "João",
       "id": "87654321",
-      "location": "Belo Horizonte, Brasil",
+      "location": {
+        "description": "Savassi, Brasil",
+        "city": "Belo Horizonte",
+        "state": "Minas Gerais",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 200,
       "rating": 4.6,
       "thumbnail": [
@@ -73,7 +97,13 @@
       "date": "5 - 10 de fev",
       "host": "Mariana",
       "id": "23456789",
-      "location": "Salvador, Brasil",
+      "location": {
+        "description": "Morro da Barra, Brasil",
+        "city": "Salvador",
+        "state": "Bahia",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 180,
       "rating": 4.4,
       "thumbnail": [
@@ -90,7 +120,13 @@
       "date": "12 - 17 de fev",
       "host": "Pedro",
       "id": "34567890",
-      "location": "Fortaleza, Brasil",
+      "location": {
+        "description": "Meireles, Brasil",
+        "city": "Fortaleza",
+        "state": "Ceará",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 220,
       "rating": 4.5,
       "thumbnail": [
@@ -107,7 +143,13 @@
       "date": "19 - 24 de fev",
       "host": "Lucas",
       "id": "45678901",
-      "location": "Curitiba, Brasil",
+      "location": {
+        "description": "Centro Histórico, Brasil",
+        "city": "Curitiba",
+        "state": "Paraná",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 160,
       "rating": 4.2,
       "thumbnail": [
@@ -124,7 +166,13 @@
       "date": "26 de fev - 3 de mar",
       "host": "Fernanda",
       "id": "56789012",
-      "location": "Florianópolis, Brasil",
+      "location": {
+        "description": "Jurerê, Brasil",
+        "city": "Florianópolis",
+        "state": "Santa Catarina",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 250,
       "rating": 4.8,
       "thumbnail": [
@@ -141,7 +189,13 @@
       "date": "5 - 10 de mar",
       "host": "Rafael",
       "id": "67890123",
-      "location": "Porto Alegre, Brasil",
+      "location": {
+        "description": "Moinhos de Vento, Brasil",
+        "city": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 190,
       "rating": 4.5,
       "thumbnail": [
@@ -158,7 +212,13 @@
       "date": "12 - 17 de mar",
       "host": "Beatriz",
       "id": "78901234",
-      "location": "Manaus, Brasil",
+      "location": {
+        "description": "Ponta Negra, Brasil",
+        "city": "Manaus",
+        "state": "Amazonas",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 210,
       "rating": 4.6,
       "thumbnail": [
@@ -175,7 +235,13 @@
       "date": "19 - 24 de mar",
       "host": "Gabriel",
       "id": "89012345",
-      "location": "Recife, Brasil",
+      "location": {
+        "description": "Boa Viagem, Brasil",
+        "city": "Recife",
+        "state": "Pernambuco",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 230,
       "rating": 4.7,
       "thumbnail": [
@@ -192,7 +258,13 @@
       "date": "26 - 31 de mar",
       "host": "Larissa",
       "id": "90123456",
-      "location": "Natal, Brasil",
+      "location": {
+        "description": "Ponta Negra, Brasil",
+        "city": "Natal",
+        "state": "Rio Grande do Norte",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 240,
       "rating": 4.8,
       "thumbnail": [
@@ -209,7 +281,13 @@
       "date": "2 - 7 de jan",
       "host": "Thiago",
       "id": "01234567",
-      "location": "Brasília, Brasil",
+      "location": {
+        "description": "Asa Sul, Brasil",
+        "city": "Brasília",
+        "state": "Distrito Federal",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 170,
       "rating": 4.4,
       "thumbnail": [
@@ -226,7 +304,13 @@
       "date": "9 - 14 de jan",
       "host": "Juliana",
       "id": "12345679",
-      "location": "Goiânia, Brasil",
+      "location": {
+        "description": "Setor Bueno, Brasil",
+        "city": "Goiânia",
+        "state": "Goiás",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 180,
       "rating": 4.3,
       "thumbnail": [
@@ -243,7 +327,13 @@
       "date": "16 - 21 de jan",
       "host": "Felipe",
       "id": "23456780",
-      "location": "Vitória, Brasil",
+      "location": {
+        "description": "Praia do Canto, Brasil",
+        "city": "Vitória",
+        "state": "Espírito Santo",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 190,
       "rating": 4.5,
       "thumbnail": [
@@ -260,7 +350,13 @@
       "date": "23 - 28 de jan",
       "host": "Patrícia",
       "id": "34567891",
-      "location": "Belém, Brasil",
+      "location": {
+        "description": "Nazaré, Brasil",
+        "city": "Belém",
+        "state": "Pará",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 200,
       "rating": 4.6,
       "thumbnail": [
@@ -277,7 +373,13 @@
       "date": "30 de jan - 4 de fev",
       "host": "Rodrigo",
       "id": "45678902",
-      "location": "Maceió, Brasil",
+      "location": {
+        "description": "Pajuçara, Brasil",
+        "city": "Maceió",
+        "state": "Alagoas",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 210,
       "rating": 4.7,
       "thumbnail": [
@@ -294,7 +396,13 @@
       "date": "6 - 11 de fev",
       "host": "Camila",
       "id": "56789013",
-      "location": "João Pessoa, Brasil",
+      "location": {
+        "description": "Tambaú, Brasil",
+        "city": "João Pessoa",
+        "state": "Paraíba",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 220,
       "rating": 4.8,
       "thumbnail": [
@@ -311,7 +419,13 @@
       "date": "13 - 18 de fev",
       "host": "Bruno",
       "id": "67890124",
-      "location": "Aracaju, Brasil",
+      "location": {
+        "description": "Atalaia, Brasil",
+        "city": "Aracaju",
+        "state": "Sergipe",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 230,
       "rating": 4.9,
       "thumbnail": [
@@ -328,7 +442,13 @@
       "date": "20 - 25 de fev",
       "host": "Renata",
       "id": "78901235",
-      "location": "Teresina, Brasil",
+      "location": {
+        "description": "Teresina, Brasil",
+        "city": "Teresina",
+        "state": "Piauí",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 240,
       "rating": 4.7,
       "thumbnail": [
@@ -345,7 +465,13 @@
       "date": "27 de fev - 4 de mar",
       "host": "André",
       "id": "89012346",
-      "location": "Campo Grande, Brasil",
+      "location": {
+        "description": "Campo Grande, Brasil",
+        "city": "Campo Grande",
+        "state": "Mato Grosso do Sul",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 250,
       "rating": 4.6,
       "thumbnail": [
@@ -362,7 +488,13 @@
       "date": "5 - 10 de mar",
       "host": "Aline",
       "id": "90123457",
-      "location": "Cuiabá, Brasil",
+      "location": {
+        "description": "Cuiabá, Brasil",
+        "city": "Cuiabá",
+        "state": "Mato Grosso",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 260,
       "rating": 4.5,
       "thumbnail": [
@@ -379,7 +511,13 @@
       "date": "12 - 17 de mar",
       "host": "Eduardo",
       "id": "01234568",
-      "location": "São Luís, Brasil",
+      "location": {
+        "description": "São Luís, Brasil",
+        "city": "São Luís",
+        "state": "Maranhão",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 270,
       "rating": 4.4,
       "thumbnail": [
@@ -396,7 +534,13 @@
       "date": "19 - 24 de mar",
       "host": "Vanessa",
       "id": "12345680",
-      "location": "Macapá, Brasil",
+      "location": {
+        "description": "Macapá, Brasil",
+        "city": "Macapá",
+        "state": "Amapá",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 280,
       "rating": 4.3,
       "thumbnail": [
@@ -413,7 +557,13 @@
       "date": "26 - 31 de mar",
       "host": "Marcelo",
       "id": "23456781",
-      "location": "Boa Vista, Brasil",
+      "location": {
+        "description": "Boa Vista, Brasil",
+        "city": "Boa Vista",
+        "state": "Roraima",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 290,
       "rating": 4.2,
       "thumbnail": [
@@ -430,7 +580,13 @@
       "date": "2 - 7 de jan",
       "host": "Paula",
       "id": "34567892",
-      "location": "Palmas, Brasil",
+      "location": {
+        "description": "Palmas, Brasil",
+        "city": "Palmas",
+        "state": "Tocantins",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 300,
       "rating": 4.1,
       "thumbnail": [
@@ -447,7 +603,13 @@
       "date": "9 - 14 de jan",
       "host": "Ricardo",
       "id": "45678903",
-      "location": "Porto Velho, Brasil",
+      "location": {
+        "description": "Porto Velho, Brasil",
+        "city": "Porto Velho",
+        "state": "Rondônia",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 310,
       "rating": 4.0,
       "thumbnail": [
@@ -464,7 +626,13 @@
       "date": "16 - 21 de jan",
       "host": "Simone",
       "id": "56789014",
-      "location": "Rio Branco, Brasil",
+      "location": {
+        "description": "Rio Branco, Brasil",
+        "city": "Rio Branco",
+        "state": "Acre",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 320,
       "rating": 4.3,
       "thumbnail": [
@@ -481,7 +649,13 @@
       "date": "23 - 28 de jan",
       "host": "Gustavo",
       "id": "67890125",
-      "location": "São Paulo, Brasil",
+      "location": {
+        "description": "Centro, Brasil",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 330,
       "rating": 4.4,
       "thumbnail": [
@@ -498,7 +672,13 @@
       "date": "30 de jan - 4 de fev",
       "host": "Tatiana",
       "id": "78901236",
-      "location": "Rio de Janeiro, Brasil",
+      "location": {
+        "description": "Copacabana, Brasil",
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 340,
       "rating": 4.5,
       "thumbnail": [
@@ -515,7 +695,13 @@
       "date": "6 - 11 de fev",
       "host": "Leonardo",
       "id": "89012347",
-      "location": "Belo Horizonte, Brasil",
+      "location": {
+        "description": "Savassi, Brasil",
+        "city": "Belo Horizonte",
+        "state": "Minas Gerais",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 350,
       "rating": 4.6,
       "thumbnail": [
@@ -532,7 +718,13 @@
       "date": "13 - 18 de fev",
       "host": "Isabela",
       "id": "90123458",
-      "location": "Curitiba, Brasil",
+      "location": {
+        "description": "Centro Histórico, Brasil",
+        "city": "Curitiba",
+        "state": "Paraná",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 360,
       "rating": 4.7,
       "thumbnail": [
@@ -549,7 +741,13 @@
       "date": "20 - 25 de fev",
       "host": "Fábio",
       "id": "01234569",
-      "location": "Florianópolis, Brasil",
+      "location": {
+        "description": "Jurerê, Brasil",
+        "city": "Florianópolis",
+        "state": "Santa Catarina",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 370,
       "rating": 4.8,
       "thumbnail": [
@@ -566,7 +764,13 @@
       "date": "27 de fev - 4 de mar",
       "host": "Carla",
       "id": "12345681",
-      "location": "Porto Alegre, Brasil",
+      "location": {
+        "description": "Moinhos de Vento, Brasil",
+        "city": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 380,
       "rating": 4.9,
       "thumbnail": [
@@ -583,7 +787,13 @@
       "date": "5 - 10 de mar",
       "host": "Diego",
       "id": "23456782",
-      "location": "Manaus, Brasil",
+      "location": {
+        "description": "Ponta Negra, Brasil",
+        "city": "Manaus",
+        "state": "Amazonas",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 390,
       "rating": 4.7,
       "thumbnail": [
@@ -600,7 +810,13 @@
       "date": "12 - 17 de mar",
       "host": "Sabrina",
       "id": "34567893",
-      "location": "Recife, Brasil",
+      "location": {
+        "description": "Boa Viagem, Brasil",
+        "city": "Recife",
+        "state": "Pernambuco",
+        "country": "Brasil"
+      },
+      "hasBadge": false,
       "price": 400,
       "rating": 4.6,
       "thumbnail": [
@@ -617,7 +833,13 @@
       "date": "19 - 24 de mar",
       "host": "Alex",
       "id": "45678904",
-      "location": "Natal, Brasil",
+      "location": {
+        "description": "Ponta Negra, Brasil",
+        "city": "Natal",
+        "state": "Rio Grande do Norte",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 410,
       "rating": 4.5,
       "thumbnail": [
@@ -634,7 +856,13 @@
       "date": "26 - 31 de mar",
       "host": "Luana",
       "id": "56789015",
-      "location": "Brasília, Brasil",
+      "location": {
+        "description": "Asa Sul, Brasil",
+        "city": "Brasília",
+        "state": "Distrito Federal",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 420,
       "rating": 4.4,
       "thumbnail": [
@@ -651,7 +879,13 @@
       "date": "2 - 7 de jan",
       "host": "Henrique",
       "id": "67890126",
-      "location": "Goiânia, Brasil",
+      "location": {
+        "description": "Setor Bueno, Brasil",
+        "city": "Goiânia",
+        "state": "Goiás",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 430,
       "rating": 4.3,
       "thumbnail": [
@@ -668,7 +902,13 @@
       "date": "9 - 14 de jan",
       "host": "Marta",
       "id": "78901237",
-      "location": "Vitória, Brasil",
+      "location": {
+        "description": "Praia do Canto, Brasil",
+        "city": "Vitória",
+        "state": "Espírito Santo",
+        "country": "Brasil"
+      },
+      "hasBadge": true,
       "price": 440,
       "rating": 4.2,
       "thumbnail": [

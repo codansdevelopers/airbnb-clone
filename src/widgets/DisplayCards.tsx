@@ -1,32 +1,44 @@
 import Image from 'next/image'
 
 import type { PublicApi } from '@/types/Api'
+import Badge from '@/components/Badge'
 import Boundary from '@/components/Boundary'
 import Card from '@/components/Card'
 
-const DisplayCards: React.FC = async () => {
+const DisplayCards = async (): Promise<React.JSX.Element> => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
   const response = await getPublicAssets()
-  
+
   return (
-    <section>
+    <section className="my-4">
       <Boundary direction="top-sides">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {response.accommodation.map((item) => (
+          {response.accommodation.map(({
+            id,
+            location,
+            hasBadge,
+            host,
+            date,
+            price,
+            rating,
+            thumbnail
+          }) => (
             <Card
-              key={item.id}
-              title={item.location}
-              host={item.host}
-              duration={item.date}
-              price={item.price}
+              key={id}
+              hasBadge={hasBadge}
+              title={location.description}
+              host={host}
+              duration={date}
+              price={price}
+              rating={rating}
             >
               <Image
-                className="border-none object-cover aspect-square"
-                width={640}
-                height={480}
-                src={item.thumbnail[0].source}
-                alt={item.thumbnail[0].description}
+                className="w-full border-none object-cover aspect-square"
+                width={300}
+                height={300}
+                src={thumbnail[0].source}
+                alt={thumbnail[0].description}
               />
             </Card>
           ))}

@@ -32,7 +32,7 @@ const SearchForm: React.FC = (): React.ReactNode => {
 
   return (
     <Boundary direction="top-sides">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <Input label="Inicie a sua busca" name="search" type="search">
           {/* Escolhe como o ícone de lupa do `input` vai ser apresentado em diferentes tipos de tela. */}
           {responsiveIcon.map((icon) => (

@@ -5,9 +5,10 @@ export type PublicApi = {
 
 type Accommodation = {
   date: string
+  hasBadge: boolean
   host: string
   id: string
-  location: string
+  location: Location
   price: number
   rating: number
   thumbnail: Image[]
@@ -18,4 +19,11 @@ type Image = {
   source: string
   description: string
   url: string
+}
+
+type Location = {
+  description: string
+  city: string
+  state: string
+  country: string
 }
