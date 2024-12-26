@@ -11,7 +11,7 @@
         "state": "Mato Grosso do Sul",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 229,
       "rating": 4.5,
       "thumbnail": [
@@ -34,7 +34,7 @@
         "state": "Rio de Janeiro",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 300,
       "rating": 4.7,
       "thumbnail": [
@@ -57,7 +57,7 @@
         "state": "São Paulo",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 150,
       "rating": 4.3,
       "thumbnail": [
@@ -80,7 +80,7 @@
         "state": "Minas Gerais",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 200,
       "rating": 4.6,
       "thumbnail": [
@@ -103,7 +103,7 @@
         "state": "Bahia",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 180,
       "rating": 4.4,
       "thumbnail": [
@@ -126,7 +126,7 @@
         "state": "Ceará",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 220,
       "rating": 4.5,
       "thumbnail": [
@@ -149,7 +149,7 @@
         "state": "Paraná",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 160,
       "rating": 4.2,
       "thumbnail": [
@@ -218,7 +218,7 @@
         "state": "Amazonas",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 210,
       "rating": 4.6,
       "thumbnail": [
@@ -241,7 +241,7 @@
         "state": "Pernambuco",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 230,
       "rating": 4.7,
       "thumbnail": [
@@ -310,7 +310,7 @@
         "state": "Goiás",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 180,
       "rating": 4.3,
       "thumbnail": [
@@ -356,7 +356,7 @@
         "state": "Pará",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 200,
       "rating": 4.6,
       "thumbnail": [
@@ -379,7 +379,7 @@
         "state": "Alagoas",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 210,
       "rating": 4.7,
       "thumbnail": [
@@ -448,7 +448,7 @@
         "state": "Piauí",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 240,
       "rating": 4.7,
       "thumbnail": [
@@ -471,7 +471,7 @@
         "state": "Mato Grosso do Sul",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 250,
       "rating": 4.6,
       "thumbnail": [
@@ -494,7 +494,7 @@
         "state": "Mato Grosso",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 260,
       "rating": 4.5,
       "thumbnail": [
@@ -586,7 +586,7 @@
         "state": "Tocantins",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 300,
       "rating": 4.1,
       "thumbnail": [
@@ -609,7 +609,7 @@
         "state": "Rondônia",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 310,
       "rating": 4.0,
       "thumbnail": [
@@ -632,7 +632,7 @@
         "state": "Acre",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 320,
       "rating": 4.3,
       "thumbnail": [
@@ -655,7 +655,7 @@
         "state": "São Paulo",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 330,
       "rating": 4.4,
       "thumbnail": [
@@ -678,7 +678,7 @@
         "state": "Rio de Janeiro",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 340,
       "rating": 4.5,
       "thumbnail": [
@@ -747,7 +747,7 @@
         "state": "Santa Catarina",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 370,
       "rating": 4.8,
       "thumbnail": [
@@ -770,7 +770,7 @@
         "state": "Rio Grande do Sul",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 380,
       "rating": 4.9,
       "thumbnail": [
@@ -839,7 +839,7 @@
         "state": "Rio Grande do Norte",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 410,
       "rating": 4.5,
       "thumbnail": [
@@ -862,7 +862,7 @@
         "state": "Distrito Federal",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 420,
       "rating": 4.4,
       "thumbnail": [
@@ -885,7 +885,7 @@
         "state": "Goiás",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 430,
       "rating": 4.3,
       "thumbnail": [
@@ -908,7 +908,7 @@
         "state": "Espírito Santo",
         "country": "Brasil"
       },
-      "hasBadge": false,
+      "hasBadge": true,
       "price": 440,
       "rating": 4.2,
       "thumbnail": [
