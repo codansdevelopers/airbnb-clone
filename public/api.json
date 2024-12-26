@@ -28,7 +28,7 @@
       "host": "Carlos",
       "id": "98237465",
       "location": {
-        "description": "Copacabana, Rio de Janeiro, Brasil",
+        "description": "Copacabana, Brasil",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "country": "Brasil"
@@ -50,7 +50,7 @@
       "host": "Ana",
       "id": "12345678",
       "location": {
-        "description": "Centro, São Paulo, Brasil",
+        "description": "Centro, Brasil",
         "city": "São Paulo",
         "state": "São Paulo",
         "country": "Brasil"
@@ -72,7 +72,7 @@
       "host": "João",
       "id": "87654321",
       "location": {
-        "description": "Savassi, Belo Horizonte, Brasil",
+        "description": "Savassi, Brasil",
         "city": "Belo Horizonte",
         "state": "Minas Gerais",
         "country": "Brasil"
@@ -94,7 +94,7 @@
       "host": "Mariana",
       "id": "23456789",
       "location": {
-        "description": "Barra, Salvador, Brasil",
+        "description": "Barra, Brasil",
         "city": "Salvador",
         "state": "Bahia",
         "country": "Brasil"
@@ -116,7 +116,7 @@
       "host": "Pedro",
       "id": "34567890",
       "location": {
-        "description": "Meireles, Fortaleza, Brasil",
+        "description": "Meireles, Brasil",
         "city": "Fortaleza",
         "state": "Ceará",
         "country": "Brasil"
@@ -138,7 +138,7 @@
       "host": "Lucas",
       "id": "45678901",
       "location": {
-        "description": "Centro Histórico, Curitiba, Brasil",
+        "description": "Centro Histórico, Brasil",
         "city": "Curitiba",
         "state": "Paraná",
         "country": "Brasil"
@@ -160,7 +160,7 @@
       "host": "Fernanda",
       "id": "56789012",
       "location": {
-        "description": "Jurerê, Florianópolis, Brasil",
+        "description": "Jurerê, Brasil",
         "city": "Florianópolis",
         "state": "Santa Catarina",
         "country": "Brasil"
@@ -182,7 +182,7 @@
       "host": "Rafael",
       "id": "67890123",
       "location": {
-        "description": "Moinhos de Vento, Porto Alegre, Brasil",
+        "description": "Moinhos de Vento, Brasil",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "country": "Brasil"
@@ -204,7 +204,7 @@
       "host": "Beatriz",
       "id": "78901234",
       "location": {
-        "description": "Ponta Negra, Manaus, Brasil",
+        "description": "Ponta Negra, Brasil",
         "city": "Manaus",
         "state": "Amazonas",
         "country": "Brasil"
@@ -226,7 +226,7 @@
       "host": "Gabriel",
       "id": "89012345",
       "location": {
-        "description": "Boa Viagem, Recife, Brasil",
+        "description": "Boa Viagem, Brasil",
         "city": "Recife",
         "state": "Pernambuco",
         "country": "Brasil"
@@ -248,7 +248,7 @@
       "host": "Larissa",
       "id": "90123456",
       "location": {
-        "description": "Ponta Negra, Natal, Brasil",
+        "description": "Ponta Negra, Brasil",
         "city": "Natal",
         "state": "Rio Grande do Norte",
         "country": "Brasil"
@@ -270,7 +270,7 @@
       "host": "Thiago",
       "id": "01234567",
       "location": {
-        "description": "Asa Sul, Brasília, Brasil",
+        "description": "Asa Sul, Brasil",
         "city": "Brasília",
         "state": "Distrito Federal",
         "country": "Brasil"
@@ -292,7 +292,7 @@
       "host": "Juliana",
       "id": "12345679",
       "location": {
-        "description": "Setor Bueno, Goiânia, Brasil",
+        "description": "Setor Bueno, Brasil",
         "city": "Goiânia",
         "state": "Goiás",
         "country": "Brasil"
@@ -314,7 +314,7 @@
       "host": "Felipe",
       "id": "23456780",
       "location": {
-        "description": "Praia do Canto, Vitória, Brasil",
+        "description": "Praia do Canto, Brasil",
         "city": "Vitória",
         "state": "Espírito Santo",
         "country": "Brasil"
@@ -336,7 +336,7 @@
       "host": "Patrícia",
       "id": "34567891",
       "location": {
-        "description": "Nazaré, Belém, Brasil",
+        "description": "Nazaré, Brasil",
         "city": "Belém",
         "state": "Pará",
         "country": "Brasil"
@@ -358,7 +358,7 @@
       "host": "Rodrigo",
       "id": "45678902",
       "location": {
-        "description": "Pajuçara, Maceió, Brasil",
+        "description": "Pajuçara, Brasil",
         "city": "Maceió",
         "state": "Alagoas",
         "country": "Brasil"
@@ -380,7 +380,7 @@
       "host": "Camila",
       "id": "56789013",
       "location": {
-        "description": "Tambaú, João Pessoa, Brasil",
+        "description": "Tambaú, Brasil",
         "city": "João Pessoa",
         "state": "Paraíba",
         "country": "Brasil"
@@ -402,7 +402,7 @@
       "host": "Bruno",
       "id": "67890124",
       "location": {
-        "description": "Atalaia, Aracaju, Brasil",
+        "description": "Atalaia, Brasil",
         "city": "Aracaju",
         "state": "Sergipe",
         "country": "Brasil"
@@ -424,7 +424,7 @@
       "host": "Renata",
       "id": "78901235",
       "location": {
-        "description": "Teresina, Piauí, Brasil",
+        "description": "Teresina, Brasil",
         "city": "Teresina",
         "state": "Piauí",
         "country": "Brasil"
@@ -446,7 +446,7 @@
       "host": "André",
       "id": "89012346",
       "location": {
-        "description": "Campo Grande, Mato Grosso do Sul, Brasil",
+        "description": "Campo Grande, Brasil",
         "city": "Campo Grande",
         "state": "Mato Grosso do Sul",
         "country": "Brasil"
@@ -468,7 +468,7 @@
       "host": "Aline",
       "id": "90123457",
       "location": {
-        "description": "Cuiabá, Mato Grosso, Brasil",
+        "description": "Cuiabá, Brasil",
         "city": "Cuiabá",
         "state": "Mato Grosso",
         "country": "Brasil"
@@ -490,7 +490,7 @@
       "host": "Eduardo",
       "id": "01234568",
       "location": {
-        "description": "São Luís, Maranhão, Brasil",
+        "description": "São Luís, Brasil",
         "city": "São Luís",
         "state": "Maranhão",
         "country": "Brasil"
@@ -512,7 +512,7 @@
       "host": "Vanessa",
       "id": "12345680",
       "location": {
-        "description": "Macapá, Amapá, Brasil",
+        "description": "Macapá, Brasil",
         "city": "Macapá",
         "state": "Amapá",
         "country": "Brasil"
@@ -534,7 +534,7 @@
       "host": "Marcelo",
       "id": "23456781",
       "location": {
-        "description": "Boa Vista, Roraima, Brasil",
+        "description": "Boa Vista, Brasil",
         "city": "Boa Vista",
         "state": "Roraima",
         "country": "Brasil"
@@ -556,7 +556,7 @@
       "host": "Paula",
       "id": "34567892",
       "location": {
-        "description": "Palmas, Tocantins, Brasil",
+        "description": "Palmas, Brasil",
         "city": "Palmas",
         "state": "Tocantins",
         "country": "Brasil"
@@ -578,7 +578,7 @@
       "host": "Ricardo",
       "id": "45678903",
       "location": {
-        "description": "Porto Velho, Rondônia, Brasil",
+        "description": "Porto Velho, Brasil",
         "city": "Porto Velho",
         "state": "Rondônia",
         "country": "Brasil"
@@ -600,7 +600,7 @@
       "host": "Simone",
       "id": "56789014",
       "location": {
-        "description": "Rio Branco, Acre, Brasil",
+        "description": "Rio Branco, Brasil",
         "city": "Rio Branco",
         "state": "Acre",
         "country": "Brasil"
@@ -622,7 +622,7 @@
       "host": "Gustavo",
       "id": "67890125",
       "location": {
-        "description": "Centro, São Paulo, Brasil",
+        "description": "Centro, Brasil",
         "city": "São Paulo",
         "state": "São Paulo",
         "country": "Brasil"
@@ -644,7 +644,7 @@
       "host": "Tatiana",
       "id": "78901236",
       "location": {
-        "description": "Copacabana, Rio de Janeiro, Brasil",
+        "description": "Copacabana, Brasil",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "country": "Brasil"
@@ -666,7 +666,7 @@
       "host": "Leonardo",
       "id": "89012347",
       "location": {
-        "description": "Savassi, Belo Horizonte, Brasil",
+        "description": "Savassi, Brasil",
         "city": "Belo Horizonte",
         "state": "Minas Gerais",
         "country": "Brasil"
@@ -688,7 +688,7 @@
       "host": "Isabela",
       "id": "90123458",
       "location": {
-        "description": "Centro Histórico, Curitiba, Brasil",
+        "description": "Centro Histórico, Brasil",
         "city": "Curitiba",
         "state": "Paraná",
         "country": "Brasil"
@@ -710,7 +710,7 @@
       "host": "Fábio",
       "id": "01234569",
       "location": {
-        "description": "Jurerê, Florianópolis, Brasil",
+        "description": "Jurerê, Brasil",
         "city": "Florianópolis",
         "state": "Santa Catarina",
         "country": "Brasil"
@@ -732,7 +732,7 @@
       "host": "Carla",
       "id": "12345681",
       "location": {
-        "description": "Moinhos de Vento, Porto Alegre, Brasil",
+        "description": "Moinhos de Vento, Brasil",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "country": "Brasil"
@@ -754,7 +754,7 @@
       "host": "Diego",
       "id": "23456782",
       "location": {
-        "description": "Ponta Negra, Manaus, Brasil",
+        "description": "Ponta Negra, Brasil",
         "city": "Manaus",
         "state": "Amazonas",
         "country": "Brasil"
@@ -776,7 +776,7 @@
       "host": "Sabrina",
       "id": "34567893",
       "location": {
-        "description": "Boa Viagem, Recife, Brasil",
+        "description": "Boa Viagem, Brasil",
         "city": "Recife",
         "state": "Pernambuco",
         "country": "Brasil"
@@ -798,7 +798,7 @@
       "host": "Alex",
       "id": "45678904",
       "location": {
-        "description": "Ponta Negra, Natal, Brasil",
+        "description": "Ponta Negra, Brasil",
         "city": "Natal",
         "state": "Rio Grande do Norte",
         "country": "Brasil"
@@ -820,7 +820,7 @@
       "host": "Luana",
       "id": "56789015",
       "location": {
-        "description": "Asa Sul, Brasília, Brasil",
+        "description": "Asa Sul, Brasil",
         "city": "Brasília",
         "state": "Distrito Federal",
         "country": "Brasil"
@@ -842,7 +842,7 @@
       "host": "Henrique",
       "id": "67890126",
       "location": {
-        "description": "Setor Bueno, Goiânia, Brasil",
+        "description": "Setor Bueno, Brasil",
         "city": "Goiânia",
         "state": "Goiás",
         "country": "Brasil"
@@ -864,7 +864,7 @@
       "host": "Marta",
       "id": "78901237",
       "location": {
-        "description": "Praia do Canto, Vitória, Brasil",
+        "description": "Praia do Canto, Brasil",
         "city": "Vitória",
         "state": "Espírito Santo",
         "country": "Brasil"
