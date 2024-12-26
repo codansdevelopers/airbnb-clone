@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import type { PublicApi } from '@/types/Api'
-import Badge from '@/components/Badge'
 import Boundary from '@/components/Boundary'
 import Card from '@/components/Card'
 
@@ -22,7 +21,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             date,
             price,
             rating,
-            thumbnail
+            thumbnail,
           }) => (
             <Card
               key={id}
