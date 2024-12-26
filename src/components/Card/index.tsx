@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import { IconHeart } from '@tabler/icons-react'
+import { IconHeart, IconStarFilled } from '@tabler/icons-react'
 
 import Badge from '@/components/Badge'
 import IconButton from '@/components/IconButton'
@@ -12,6 +11,7 @@ type CardProps = {
   host: string
   duration: string
   price: number
+  rating: number
 }
 
 const Card = ({
@@ -20,6 +20,7 @@ const Card = ({
   hasBadge,
   host,
   price,
+  rating,
   title,
 }: CardProps): React.JSX.Element => {
   return (
@@ -57,9 +58,18 @@ const Card = ({
           </div>
 
           <figcaption className="text-xs md:text-sm">
-            <h3 className="font-semibold">
-              {title}
-            </h3>
+            <div className="flex justify-between items-center">
+              <h3 className="font-semibold">
+                {title}
+              </h3>
+
+              <div className="flex items-center gap-1">
+                <IconStarFilled width={12} height={12} className="fill-gray-900" />
+                <span className="font-medium">
+                  {rating}
+                </span>
+              </div>
+            </div>
 
             <div aria-label="Informações">
               <span className="block my-0.5">Anfitriã(o): {host}</span>
