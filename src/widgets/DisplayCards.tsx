@@ -28,6 +28,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
               hasBadge={hasBadge}
               title={location.description}
               host={host}
+              href={id}
               duration={date}
               price={price}
               rating={rating}
