@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import { IconChevronRight, IconAdjustmentsHorizontal } from '@tabler/icons-react'
 
 import type { PublicApi } from '@/types/Api'
 import Boundary from '@/components/Boundary'
@@ -42,11 +42,9 @@ const HorizontalScrollTab: React.FC = async () => {
                   title="Avançar"
                   type="button"
                   icon={(
-                    <Image
-                      src="/assets/chevron-right.png"
-                      alt="Seta para direita"
-                      width={20}
-                      height={20}
+                    <IconChevronRight
+                      arial-label="Seta para direita"
+                      size={20}
                     />
                   )}
                 />
@@ -56,12 +54,10 @@ const HorizontalScrollTab: React.FC = async () => {
                   title="Filtro"
                   type="button"
                   icon={(
-                    <Image
-                      src="/assets/adjustments.png"
-                      alt="Ícone de ajustes"
-                      width={20}
-                      height={20}
-                    />
+                    <IconAdjustmentsHorizontal
+                      arial-label="Ícone de ajustes"
+                      size={20}
+                    /> 
                   )}
                 >
                   Filtros
