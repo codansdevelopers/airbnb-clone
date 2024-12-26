@@ -4,7 +4,7 @@ export const getApi = async (): Promise<PublicApi> => {
   try {
     const response = await fetch('https://codans.com.br/api.json', {
       headers: {
-        'x-site': 'airbnb.com.br',
+        'x-site-api': 'airbnb.com.br',
       }
     })
     const api: PublicApi = await response.json()
