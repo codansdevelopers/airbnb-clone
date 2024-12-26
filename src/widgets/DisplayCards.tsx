@@ -13,20 +13,27 @@ const DisplayCards: React.FC = async () => {
     <section className="my-4">
       <Boundary direction="top-sides">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {response.accommodation.map((item) => (
+          {response.accommodation.map(({
+            id,
+            location,
+            host,
+            date,
+            price,
+            thumbnail
+          }) => (
             <Card
-              key={item.id}
-              title={item.location.description}
-              host={item.host}
-              duration={item.date}
-              price={item.price}
+              key={id}
+              title={location.description}
+              host={host}
+              duration={date}
+              price={price}
             >
               <Image
                 className="border-none object-cover aspect-square"
                 width={300}
                 height={300}
-                src={item.thumbnail[0].source}
-                alt={item.thumbnail[0].description}
+                src={thumbnail[0].source}
+                alt={thumbnail[0].description}
               />
             </Card>
           ))}
