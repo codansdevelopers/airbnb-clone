@@ -18,18 +18,11 @@ const TopBar: React.FC = () => {
         <div className="flex justify-between items-center">
           <Logo />
 
-          <div className="flex gap-4">
-            <Link
-              className={highlightText(pathname, '/')}
-              href="/"
-            >
+          <div className="flex gap-8">
+            <Link className={highlightText(pathname, '/')} href="/">
               Acomodações
             </Link>
-            
-            <Link
-              className={highlightText(pathname, '/experiences')}
-              href="/experiences"
-            >
+            <Link className={highlightText(pathname, '/experiences')} href="/experiences">
               Experiências
             </Link>
           </div>
