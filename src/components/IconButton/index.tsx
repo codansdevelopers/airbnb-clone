@@ -1,6 +1,6 @@
 import cx from 'clsx'
 
-type Props = {
+type IconButtonProps = {
   background: 'transparent' | 'red'
   border?: boolean
   children?: React.ReactNode
@@ -11,7 +11,7 @@ type Props = {
   type: 'button' | 'submit' | 'reset'
 }
 
-const IconButton: React.FC<Props> = ({
+const IconButton = ({
   background,
   border,
   children,
@@ -20,7 +20,7 @@ const IconButton: React.FC<Props> = ({
   noPadding,
   title,
   type,
-}): React.ReactNode => {
+}: IconButtonProps): React.JSX.Element => {
   return (
     <button
       title={title}
