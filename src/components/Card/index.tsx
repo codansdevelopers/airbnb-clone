@@ -1,4 +1,5 @@
 type CardProps = {
+  badge?: React.ReactNode
   children: React.ReactNode
   title: string
   host: string
@@ -6,10 +7,25 @@ type CardProps = {
   price: number
 }
 
-const Card: React.FC<CardProps> = ({ children, duration, host, price, title }) => {
+const Card = ({ 
+  badge,
+  children,
+  duration,
+  host,
+  price,
+  title
+}: CardProps) => {
   return (
     <article className="flex flex-col gap-y-2">
-      <div className="overflow-hidden rounded-lg sm:rounded-xl bg-gray-200 border border-gray-200">
+      <div className="relative overflow-hidden rounded-lg sm:rounded-xl bg-gray-200 border border-gray-200">
+        {/* Renderiza esse bloco, apenas se o badge estiver disponível */}
+        {badge && (
+          <div className="absolute top-0 left-0 m-4">
+            {badge}
+          </div>
+        )}
+
+        {/* Aqui ficará a imagem principal exibida pelo Card */}
         {children}
       </div>
 
