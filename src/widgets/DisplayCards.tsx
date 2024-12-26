@@ -16,7 +16,7 @@ const DisplayCards: React.FC = async () => {
           {response.accommodation.map((item) => (
             <Card
               key={item.id}
-              title={item.location}
+              title={item.location.description}
               host={item.host}
               duration={item.date}
               price={item.price}
