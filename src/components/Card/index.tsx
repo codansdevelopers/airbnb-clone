@@ -9,6 +9,7 @@ type CardProps = {
   title: string
   hasBadge: boolean
   host: string
+  href: string
   duration: string
   price: number
   rating: number
@@ -19,13 +20,14 @@ const Card = ({
   duration,
   hasBadge,
   host,
+  href,
   price,
   rating,
   title,
 }: CardProps): React.JSX.Element => {
   return (
     <article aria-label="Card">
-      <Link className="block" href="#">
+      <Link className="block" title={title} href={href}>
         <figure className="flex flex-col gap-y-2">
           <div className="relative overflow-hidden rounded-lg sm:rounded-xl bg-gray-200 border border-gray-200">
             <header className="absolute w-full top-0 left-0">
@@ -57,14 +59,19 @@ const Card = ({
             {children}
           </div>
 
-          <figcaption className="text-xs md:text-sm">
+          <figcaption className="text-sm">
             <div className="flex justify-between items-center">
               <h3 className="font-semibold">
                 {title}
               </h3>
 
               <div className="flex items-center gap-1">
-                <IconStarFilled width={12} height={12} className="fill-gray-900" />
+                <IconStarFilled
+                  width={12}
+                  height={12}
+                  className="fill-gray-900"
+                />
+
                 <span className="font-medium">
                   {rating}
                 </span>

@@ -1,14 +1,13 @@
 import Image from 'next/image'
 
-import type { PublicApi } from '@/types/Api'
-import Badge from '@/components/Badge'
+import { getApi } from '@/utils/api'
 import Boundary from '@/components/Boundary'
 import Card from '@/components/Card'
 
 const DisplayCards = async (): Promise<React.JSX.Element> => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
-  const response = await getPublicAssets()
+  const response = await getApi()
 
   return (
     <section className="my-4">
@@ -22,13 +21,14 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             date,
             price,
             rating,
-            thumbnail
+            thumbnail,
           }) => (
             <Card
               key={id}
               hasBadge={hasBadge}
               title={location.description}
               host={host}
+              href={id}
               duration={date}
               price={price}
               rating={rating}
@@ -46,28 +46,6 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
       </Boundary>
     </section>
   )
-}
-
-const getPublicAssets = async (): Promise<PublicApi> => {
-  // Define a URL da API de acordo com o ambiente.
-  // Se o ambiente for de produção, a URL é a do servidor de produção.
-  const HOSTNAME = process.env.NODE_ENV === 'production' ?
-    'https://airbnb.codans.com.br' :
-    'http://localhost:3000'
-
-  try {
-    const response = await fetch(`${HOSTNAME}/api.json`, {
-      cache: 'no-store'
-    })
-    const api: PublicApi = await response.json()
-    // Retorna os dados da API.
-    return api
-  } catch (e) {
-    // Fazer tratamento de erro aqui ou enviar para algum serviço de monitoramento.
-    // Por enquanto, só vamos logar o erro no console.
-    console.error(e)
-    throw e
-  }
 }
 
 export default DisplayCards

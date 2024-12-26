@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import { IconUserCircle } from '@tabler/icons-react'
 import { usePathname } from 'next/navigation'
 import cx from 'clsx'
 
@@ -34,14 +34,12 @@ const TopBar: React.FC = () => {
               title="Filtro"
               type="button"
               icon={(
-                <Image
-                  src="/assets/user-circle.png"
-                  alt="Ícone de ajustes"
-                  width={20}
-                  height={20}
+                <IconUserCircle
+                  aria-label="Ícone do usuário"
+                  size={20}
                 />
               )}
-              >
+            >
                 Entrar
             </IconButton>
           </div>

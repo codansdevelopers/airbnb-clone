@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import { IconChevronRight, IconAdjustmentsHorizontal } from '@tabler/icons-react'
 
-import type { PublicApi } from '@/types/Api'
+import { getApi } from '@/utils/api'
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
 import List from '@/components/List'
@@ -10,7 +10,7 @@ import Tab from '@/components/Tab'
 const HorizontalScrollTab: React.FC = async () => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
-  const response = await getPublicAssets()
+  const response = await getApi()
 
   // Mapeia os ícones da resposta da API para o componente Tab.
   // Cada ícone é um item da lista.
@@ -42,11 +42,9 @@ const HorizontalScrollTab: React.FC = async () => {
                   title="Avançar"
                   type="button"
                   icon={(
-                    <Image
-                      src="/assets/chevron-right.png"
-                      alt="Seta para direita"
-                      width={20}
-                      height={20}
+                    <IconChevronRight
+                      arial-label="Seta para direita"
+                      size={20}
                     />
                   )}
                 />
@@ -56,12 +54,10 @@ const HorizontalScrollTab: React.FC = async () => {
                   title="Filtro"
                   type="button"
                   icon={(
-                    <Image
-                      src="/assets/adjustments.png"
-                      alt="Ícone de ajustes"
-                      width={20}
-                      height={20}
-                    />
+                    <IconAdjustmentsHorizontal
+                      arial-label="Ícone de ajustes"
+                      size={20}
+                    /> 
                   )}
                 >
                   Filtros
@@ -73,26 +69,6 @@ const HorizontalScrollTab: React.FC = async () => {
       </Boundary>
     </div>
   )
-}
-
-const getPublicAssets = async (): Promise<PublicApi> => {
-  // Define a URL da API de acordo com o ambiente.
-  // Se o ambiente for de produção, a URL é a do servidor de produção.
-  const HOSTNAME = process.env.NODE_ENV === 'production' ?
-    'https://airbnb.codans.com.br' :
-    'http://localhost:3000'
-
-  try {
-    const response = await fetch(`${HOSTNAME}/api.json`)
-    const api: PublicApi = await response.json()
-    // Retorna os dados da API.
-    return api
-  } catch (e) {
-    // Fazer tratamento de erro aqui ou enviar para algum serviço de monitoramento.
-    // Por enquanto, só vamos logar o erro no console.
-    console.error(e)
-    throw e
-  }
 }
 
 export default HorizontalScrollTab

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { IconSearch } from '@tabler/icons-react'
 
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
@@ -43,13 +43,11 @@ const SearchForm: React.FC = (): React.ReactNode => {
                 type="submit"
                 noOpacity={true}
                 icon={(
-                  <Image
+                  <IconSearch
+                    aria-label="Lupa"
                     className="sm:invert"
-                    src="/assets/search.png"
-                    alt="Lupa"
-                    width={icon.size}
-                    height={icon.size}
-                  />
+                    size={icon.size}
+                  /> 
                 )}
               />
             </span>
