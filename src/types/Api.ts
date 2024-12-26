@@ -5,6 +5,7 @@ export type PublicApi = {
 
 type Accommodation = {
   date: string
+  hasBadge: boolean
   host: string
   id: string
   location: Location
