@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { IconHeart } from '@tabler/icons-react'
 
 import Badge from '@/components/Badge'
 import IconButton from '@/components/IconButton'
@@ -40,21 +41,12 @@ const Card = ({
                   type="button"
                   noPadding={true}
                   icon={(
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                    <IconHeart
                       width={28}
                       height={28}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
                       strokeWidth={1.5}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
                       className="stroke-white fill-gray-800"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                    </svg>
+                    />
                   )}
                 />
               </div>
