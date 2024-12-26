@@ -21,6 +21,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             host,
             date,
             price,
+            rating,
             thumbnail
           }) => (
             <Card
@@ -30,6 +31,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
               host={host}
               duration={date}
               price={price}
+              rating={rating}
             >
               <Image
                 className="w-full border-none object-cover aspect-square"
