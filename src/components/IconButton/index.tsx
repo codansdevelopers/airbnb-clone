@@ -6,6 +6,7 @@ type Props = {
   children?: React.ReactNode
   icon: React.ReactNode
   noOpacity?: boolean
+  noPadding?: boolean
   title: string
   type: 'button' | 'submit' | 'reset'
 }
@@ -16,6 +17,7 @@ const IconButton: React.FC<Props> = ({
   children,
   icon,
   noOpacity,
+  noPadding,
   title,
   type,
 }): React.ReactNode => {
@@ -24,7 +26,7 @@ const IconButton: React.FC<Props> = ({
       title={title}
       type={type}
       className={cx(
-        getRound(children),
+        getRound(children, noPadding),
         getBackground(background),
         getBorder(border),
       )}
@@ -45,10 +47,10 @@ const IconButton: React.FC<Props> = ({
   )
 }
 
-const getRound = (children?: React.ReactNode): string => {
+const getRound = (children?: React.ReactNode, noPadding?: boolean): string => {
   return cx({
-    'm-2 py-3 px-4 rounded-xl': children,
-    'm-2 p-2 rounded-full'    : !children,
+    'm-2 py-3 px-4 rounded-xl': children  && !noPadding,
+    'm-2 p-2 rounded-full'    : !children && !noPadding,
   })
 }
 
