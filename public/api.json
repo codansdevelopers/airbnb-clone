@@ -28,7 +28,7 @@
       "host": "Carlos",
       "id": "98237465",
       "location": {
-        "description": "Copacabana, Brasil",
+        "description": "Memorial de Copacabana, Brasil",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "country": "Brasil"
@@ -50,7 +50,7 @@
       "host": "Ana",
       "id": "12345678",
       "location": {
-        "description": "Centro, Brasil",
+        "description": "Campo Celeste, Brasil",
         "city": "São Paulo",
         "state": "São Paulo",
         "country": "Brasil"
@@ -94,7 +94,7 @@
       "host": "Mariana",
       "id": "23456789",
       "location": {
-        "description": "Barra, Brasil",
+        "description": "Morro da Barra, Brasil",
         "city": "Salvador",
         "state": "Bahia",
         "country": "Brasil"
