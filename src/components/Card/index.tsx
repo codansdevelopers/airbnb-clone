@@ -57,14 +57,19 @@ const Card = ({
             {children}
           </div>
 
-          <figcaption className="text-xs md:text-sm">
+          <figcaption className="text-sm">
             <div className="flex justify-between items-center">
               <h3 className="font-semibold">
                 {title}
               </h3>
 
               <div className="flex items-center gap-1">
-                <IconStarFilled width={12} height={12} className="fill-gray-900" />
+                <IconStarFilled
+                  width={12}
+                  height={12}
+                  className="fill-gray-900"
+                />
+
                 <span className="font-medium">
                   {rating}
                 </span>
