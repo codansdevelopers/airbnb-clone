@@ -1,10 +1,11 @@
 import Image from 'next/image'
 
 import type { PublicApi } from '@/types/Api'
+import Badge from '@/components/Badge'
 import Boundary from '@/components/Boundary'
 import Card from '@/components/Card'
 
-const DisplayCards: React.FC = async () => {
+const DisplayCards = async (): Promise<React.JSX.Element> => {
   // Aguarda a resposta da API.
   // A função getPublicAssets é assíncrona, então o await é necessário.
   const response = await getPublicAssets()
@@ -16,6 +17,7 @@ const DisplayCards: React.FC = async () => {
           {response.accommodation.map(({
             id,
             location,
+            hasBadge,
             host,
             date,
             price,
@@ -23,6 +25,7 @@ const DisplayCards: React.FC = async () => {
           }) => (
             <Card
               key={id}
+              badge={hasBadge && <Badge text="Preferido dos hóspedes" />}
               title={location.description}
               host={host}
               duration={date}
