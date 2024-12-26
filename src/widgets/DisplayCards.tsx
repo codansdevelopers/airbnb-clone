@@ -25,14 +25,14 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
           }) => (
             <Card
               key={id}
-              badge={hasBadge && <Badge text="Preferido dos hóspedes" />}
+              hasBadge={hasBadge}
               title={location.description}
               host={host}
               duration={date}
               price={price}
             >
               <Image
-                className="border-none object-cover aspect-square"
+                className="w-full border-none object-cover aspect-square"
                 width={300}
                 height={300}
                 src={thumbnail[0].source}
