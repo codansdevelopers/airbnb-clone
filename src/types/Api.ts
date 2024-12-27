@@ -3,7 +3,7 @@ export type PublicApi = {
   icons: Image[]
 }
 
-type Accommodation = {
+export type Accommodation = {
   date: string
   hasBadge: boolean
   host: string
