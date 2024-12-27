@@ -1,15 +1,21 @@
-import type { Accommodation } from '@/types/Api'
+import Image from 'next/image'
+
+import type { Picture } from '@/types/Api'
 import Boundary from "@/components/Boundary"
 
 type GalleryProps = {
-  accomodation: Accommodation
+  thumbnails: Picture[]
 }
 
-const Gallery = async ({ accomodation }: GalleryProps): Promise<React.JSX.Element> => {
+const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element> => {
+  const [thumbnail] = thumbnails
+
   return (
     <Boundary direction="top-sides">
       <section className="my-8">
-        <h1 className="text-3xl font-medium">{accomodation.id}</h1>
+        <h1 className="text-2xl font-semibold">
+          {thumbnail.description}
+        </h1>
       </section>
     </Boundary>
   )
