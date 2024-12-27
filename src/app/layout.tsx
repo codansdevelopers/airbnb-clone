@@ -2,7 +2,6 @@ import '@/globals.css'
 import { Metadata } from 'next'
 import { montserrat } from '@/fonts/google'
 
-import HorizontalScrollTab from '@/widgets/HorizontalScrollTab'
 import SearchForm from '@/widgets/SearchForm'
 import TopBar from '@/widgets/TopBar'
 
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
 }) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
@@ -22,7 +21,6 @@ export default function RootLayout({
         <header>
           <TopBar />
           <SearchForm />
-          <HorizontalScrollTab />
         </header>
         <main>
           {children}
