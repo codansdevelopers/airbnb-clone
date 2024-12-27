@@ -3,6 +3,7 @@ import type { PublicApi } from '@/types/Api'
 export const getApi = async (): Promise<PublicApi> => {
   try {
     const response = await fetch('https://codans.com.br/api.json', {
+      cache: 'force-cache',
       headers: {
         'x-site-api': 'airbnb.com.br',
       }
