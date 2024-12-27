@@ -21,7 +21,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             date,
             price,
             rating,
-            thumbnail,
+            thumbnails,
           }) => (
             <Card
               key={id}
@@ -37,8 +37,8 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
                 className="w-full border-none object-cover aspect-square"
                 width={300}
                 height={300}
-                src={thumbnail[0].source}
-                alt={thumbnail[0].description}
+                src={thumbnails[0].source}
+                alt={thumbnails[0].description}
               />
             </Card>
           ))}

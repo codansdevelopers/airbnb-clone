@@ -39,7 +39,7 @@ export default async function Page({
 
   return (
     <Fragment>
-      <Gallery thumbnails={post.thumbnail} />
+      <Gallery thumbnails={post.thumbnails} />
     </Fragment>
   )
 }
