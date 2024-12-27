@@ -11,7 +11,7 @@ export type Accommodation = {
   location: Location
   price: number
   rating: number
-  thumbnail: Picture[]
+  thumbnails: Picture[]
 }
 
 export type Picture = {
