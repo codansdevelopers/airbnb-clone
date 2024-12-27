@@ -1,9 +1,9 @@
 export type PublicApi = {
   accommodation: Accommodation[]
-  icons: Image[]
+  icons: Picture[]
 }
 
-type Accommodation = {
+export type Accommodation = {
   date: string
   hasBadge: boolean
   host: string
@@ -11,10 +11,10 @@ type Accommodation = {
   location: Location
   price: number
   rating: number
-  thumbnail: Image[]
+  thumbnails: Picture[]
 }
 
-type Image = {
+export type Picture = {
   id: string
   source: string
   description: string
