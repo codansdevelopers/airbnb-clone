@@ -1,5 +1,6 @@
 import '@/globals.css'
 import { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/react"
 import { montserrat } from '@/fonts/google'
 
 import SearchForm from '@/widgets/SearchForm'
@@ -24,6 +25,7 @@ export default function RootLayout({
         </header>
         <main>
           {children}
+          <Analytics />
         </main>
       </body>
     </html>
