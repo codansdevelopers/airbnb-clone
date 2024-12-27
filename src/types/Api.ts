@@ -1,6 +1,6 @@
 export type PublicApi = {
   accommodation: Accommodation[]
-  icons: Image[]
+  icons: Picture[]
 }
 
 export type Accommodation = {
@@ -11,10 +11,10 @@ export type Accommodation = {
   location: Location
   price: number
   rating: number
-  thumbnail: Image[]
+  thumbnail: Picture[]
 }
 
-type Image = {
+export type Picture = {
   id: string
   source: string
   description: string
