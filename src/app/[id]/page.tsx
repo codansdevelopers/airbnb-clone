@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { notFound } from 'next/navigation'
 
-import { getApi } from '@/utils/api'
+import { getApi, getAccommodation } from '@/utils/api'
 import Gallery from '@/widgets/Gallery'
 
 type PageProps = {
@@ -29,12 +29,7 @@ export default async function Page({
   const { id } = await params
   // Quero receber a API aqui para poder filtrar o post pelo `id`.
   // isso me permite acessar o post específico que corresponde ao `id` passado.
-  const api = await getApi()
-
-  // Aqui eu filtro o post específico pelo `id` passado.
-  const post = api.accommodation.find((post) => {
-    return post.id === id
-  })
+  const post = await getAccommodation(id)
 
   if (!post) {
     // Se o post não for encontrado, eu retorno uma página 404.
