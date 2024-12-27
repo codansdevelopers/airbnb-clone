@@ -1,3 +1,6 @@
+import { Fragment } from 'react'
+import { notFound } from 'next/navigation'
+
 import { getApi } from '@/utils/api'
 import Gallery from '@/widgets/Gallery'
 
@@ -31,9 +34,17 @@ export default async function Page({
   // Aqui eu filtro o post específico pelo `id` passado.
   const post = api.accommodation.find((post) => {
     return post.id === id
-  })!
+  })
+
+  if (!post) {
+    // Se o post não for encontrado, eu retorno uma página 404.
+    // Isso é feito com a função `notFound` do Next.js.
+    notFound()
+  }
 
   return (
-    <Gallery accomodation={post} />
+    <Fragment>
+      <Gallery accomodation={post} />
+    </Fragment>
   )
 }
