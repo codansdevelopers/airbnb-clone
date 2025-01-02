@@ -1,10 +1,10 @@
 import '@/globals.css'
 import { Metadata } from 'next'
-import { Analytics } from "@vercel/analytics/react"
 import { montserrat } from '@/fonts/google'
 
 import SearchForm from '@/widgets/SearchForm'
 import TopBar from '@/widgets/TopBar'
+import FooterLayout from '@/widgets/FooterLayout'
 
 export const metadata: Metadata = {
   title: 'Airbnb | Locações por temporada, chalés, casas de praia e muito mais.',
@@ -23,10 +23,14 @@ export default function RootLayout({
           <TopBar />
           <SearchForm />
         </header>
+
         <main>
           {children}
-          <Analytics />
         </main>
+
+        <footer>
+          <FooterLayout />
+        </footer>
       </body>
     </html>
   )

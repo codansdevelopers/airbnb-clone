@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { IconUserCircle } from '@tabler/icons-react'
 import { usePathname } from 'next/navigation'
-import cx from 'clsx'
 
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
@@ -19,10 +18,10 @@ const TopBar: React.FC = () => {
           <Logo />
 
           <div className="flex gap-8">
-            <Link className={highlightText(pathname, '/')} href="/">
+            <Link className="font-semibold" href="/">
               Acomodações
             </Link>
-            <Link className={highlightText(pathname, '/experiences')} href="/experiences">
+            <Link className="opacity-60" href="#">
               Experiências
             </Link>
           </div>
@@ -47,13 +46,6 @@ const TopBar: React.FC = () => {
       </Boundary>
     </div>
   )
-}
-
-const highlightText = (pathname: string, target: string) => {
-  return cx({
-    'opacity-65': !pathname.startsWith(target),
-    'font-semibold opacity-100': pathname.startsWith(target),
-  })
 }
 
 export default TopBar

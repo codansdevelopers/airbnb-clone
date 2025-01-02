@@ -45,7 +45,7 @@ const SearchForm: React.FC = (): React.ReactNode => {
                 icon={(
                   <IconSearch
                     aria-label="Lupa"
-                    className="sm:invert"
+                    className="size-5 sm:size-8 sm:invert"
                     size={icon.size}
                   /> 
                 )}
