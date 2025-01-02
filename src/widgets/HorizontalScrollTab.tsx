@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IconChevronRight, IconAdjustmentsHorizontal } from '@tabler/icons-react'
+import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
 
 import { getApi } from '@/utils/api'
 import Boundary from '@/components/Boundary'
@@ -36,18 +36,6 @@ const HorizontalScrollTab: React.FC = async () => {
             {tabs}
             <List label="Interactive" scroll="horizontal" type="item">
               <div className="h-full absolute top-0 right-0 flex items-center bg-white">
-                <IconButton
-                  background="transparent"
-                  border={true}
-                  title="Avançar"
-                  type="button"
-                  icon={(
-                    <IconChevronRight
-                      arial-label="Seta para direita"
-                      size={20}
-                    />
-                  )}
-                />
                 <IconButton
                   background="transparent"
                   border={true}
