@@ -17,8 +17,17 @@ const Input: React.FC<InputProps> = ({ children, label, name, type }) => {
       </ResponsiveIcon>
 
       {/* Campo de pesquisa */}
-      <label className="sr-only" htmlFor={id}>{label}</label>
-      <input className="w-full py-2 sm:p-4 focus:outline-none" id={id} name={name} type={type} placeholder={label} />
+      <label className="sr-only" htmlFor={id}>
+        {label}
+      </label>
+
+      <input
+        className="w-full py-2 sm:p-4 focus:outline-none bg-transparent"
+        id={id}
+        name={name}
+        type={type}
+        placeholder={label}
+      />
 
       <SearchIcon>
         {children}
