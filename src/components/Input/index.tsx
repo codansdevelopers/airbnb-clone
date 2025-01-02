@@ -1,10 +1,10 @@
-import { type HTMLInputTypeAttribute, useId } from "react"
+import { useId } from "react"
 
 type InputProps = {
   children: React.ReactNode | React.ReactNode[]
   label: string
   name: string
-  type: HTMLInputTypeAttribute
+  type: string
 }
 
 const Input: React.FC<InputProps> = ({ children, label, name, type }) => {

@@ -4,6 +4,7 @@ import { montserrat } from '@/fonts/google'
 
 import SearchForm from '@/widgets/SearchForm'
 import TopBar from '@/widgets/TopBar'
+import FooterLayout from '@/widgets/FooterLayout'
 
 export const metadata: Metadata = {
   title: 'Airbnb | Locações por temporada, chalés, casas de praia e muito mais.',
@@ -22,9 +23,14 @@ export default function RootLayout({
           <TopBar />
           <SearchForm />
         </header>
+
         <main>
           {children}
         </main>
+
+        <footer>
+          <FooterLayout />
+        </footer>
       </body>
     </html>
   )
