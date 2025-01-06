@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import Image from 'next/image'
 
 import type { Picture } from '@/types/Api'
@@ -29,22 +30,35 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
   })
 
   return (
-    <Boundary direction="top-sides">
-      <section className="my-4">
-        <h1 className="mb-4 text-2xl font-semibold">
-          {thumbnail.description}
-        </h1>
+    <Fragment>
+      <div className="sm:hidden">
+        <Image
+          priority={true}
+          width={320}
+          height={180}
+          className="w-full max-h-[250px] border-none object-cover"
+          src={thumbnail.source}
+          alt={thumbnail.description}
+        />
+      </div>
 
-        <div className="gap-2 grid grid-cols-12 rounded-2xl overflow-hidden">
-          <div className="col-span-6">
-            {createGalleryThumbnails(thumbnail)}
+      <Boundary direction="top-sides">
+        <section className="my-4">
+          <h1 className="mb-4 text-2xl capitalize font-semibold">
+            {thumbnail.description}
+          </h1>
+
+          <div className="hidden gap-2 sm:grid grid-cols-12 rounded-2xl overflow-hidden">
+            <div className="col-span-6">
+              {createGalleryThumbnails(thumbnail)}
+            </div>
+            <div className="col-span-6 gap-2 grid grid-cols-2">
+              {galleryThumbnails}
+            </div>
           </div>
-          <div className="col-span-6 gap-2 grid grid-cols-2">
-            {galleryThumbnails}
-          </div>
-        </div>
-      </section>
-    </Boundary>
+        </section>
+      </Boundary>
+    </Fragment>
   )
 }
 
