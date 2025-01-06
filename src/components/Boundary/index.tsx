@@ -11,7 +11,7 @@ const Boundary: React.FC<BoundaryProps> = ({ direction, role, children }) => {
     <div role={role} className={cx('max-w-screen-2xl mx-auto', {
       // Seleciona a classe de acordo com a propriedade direction
       'px-6 sm:px-10'             : direction === 'around',
-      'px-6 pt-4 sm:px-10 sm:pt-2': direction === 'top-sides',
+      'px-6 pt-2.5 sm:px-10 sm:pt-2': direction === 'top-sides',
     })}>
       {children}
     </div>
