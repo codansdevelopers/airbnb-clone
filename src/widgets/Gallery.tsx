@@ -48,6 +48,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
             {thumbnail.description}
           </h1>
 
+          {/* Grid de galeria de imagens online para telas maiores. Tablet, desktop, etc. */}
           <div className="hidden gap-2 sm:grid grid-cols-12 rounded-2xl overflow-hidden">
             <div className="col-span-6">
               {createGalleryThumbnails(thumbnail)}
