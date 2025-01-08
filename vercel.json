@@ -10,7 +10,7 @@
           "value": "^(http(s)?:\/\/)?(w{,3}).?airbnb.com(.br)?$"
         }
       ],
-      "source": "/api",
+      "source": "/api(.*)",
       "destination": "/api.json"
     },
     {
@@ -21,7 +21,7 @@
           "value": "^(http(s)?:\/\/)?(w{,3}).?airbnb.com(.br)?$"
         }
       ],
-      "source": "/api",
+      "source": "/api(.*)",
       "destination": "/mentoria/web"
     }
   ]

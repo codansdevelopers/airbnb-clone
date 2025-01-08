@@ -7,7 +7,7 @@ const requestInit: RequestInit = {
   },
   headers: {
     'x-site-api': 'airbnb.com.br',
-  }
+  },
 }
 
 export const getApi = async (): Promise<PublicApi> => {
