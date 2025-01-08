@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { notFound } from 'next/navigation'
 
 import { getApi, getAccommodation } from '@/utils/api'
+import AccomodationDescription from '@/widgets/AccomodationDescription'
 import Gallery from '@/widgets/Gallery'
 
 type PageProps = {
@@ -40,6 +41,7 @@ export default async function Page({
   return (
     <Fragment>
       <Gallery thumbnails={post.thumbnails} />
+      <AccomodationDescription />
     </Fragment>
   )
 }

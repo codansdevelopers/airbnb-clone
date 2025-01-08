@@ -1,4 +1,4 @@
-import cx from 'clsx'
+import { formatClassName } from '@/utils/formatClassName'
 
 type IconButtonProps = {
   background: 'transparent' | 'red'
@@ -25,14 +25,14 @@ const IconButton = ({
     <button
       title={title}
       type={type}
-      className={cx(
-        getRound(children, noPadding),
-        getBackground(background),
-        getBorder(border),
-      )}
+      className={formatClassName(`
+        ${Css.getBackgroundColor({ background })}
+        ${Css.getBorder({ border })}
+        ${Css.getRounded({ children, noPadding })}
+      `)}
     >
-      <div className={getFlexibleLayout(children)}>
-        <span className={cx({ 'opacity-80': !noOpacity })}>
+      <div className={Css.getFlexibleLayout({ children })}>
+        <span className={Css.getOpacity({ noOpacity })}>
           {icon}
         </span>
 
@@ -47,30 +47,52 @@ const IconButton = ({
   )
 }
 
-const getRound = (children?: React.ReactNode, noPadding?: boolean): string => {
-  return cx({
-    'm-2 py-3 px-4 rounded-xl': children  && !noPadding,
-    'm-2 p-2 rounded-full'    : !children && !noPadding,
-  })
-}
-
-const getBackground = (background: string): string => {
-  return cx({
-    'bg-transparent': background === 'transparent',
-    'bg-red-500'    : background === 'red',
-  })
-}
-
-const getBorder = (border?: boolean): string => {
-  return cx({
-    'border border-gray-200 hover:border-gray-400': border,
-  })
-}
-
-const getFlexibleLayout = (children?: React.ReactNode): string => {
-  return cx({
-    'flex justify-center items-center gap-1.5': children,
-  })
+const Css = {
+  getRounded: ({ children, noPadding }: Pick<IconButtonProps, 'children' | 'noPadding'>) => {
+    return formatClassName(`
+      ${
+        /** Se o botão de ícone não possuir um filho, então renderiza o botão de ícone redondo */
+        children  && !noPadding && 'm-2 py-3 px-4 rounded-xl' ||
+        !children && !noPadding && 'm-2 p-2 rounded-full'
+      }
+    `)
+  },
+  getBackgroundColor: ({ background }: Pick<IconButtonProps, 'background'>) => {
+    return formatClassName(`
+      ${
+        /** Escolhe a cor de fundo do botão de ícone */
+        background === 'transparent' && 'bg-transparent' ||
+        background === 'red'         && 'bg-red-500'
+      }
+    `)
+  },
+  getBorder: ({ border }: Pick<IconButtonProps, 'border'>) => {
+    return formatClassName(`
+      ${
+        /** Se o botão de ícone possuir o atributo de borda, então renderiza a borda */
+        border  && 'border border-gray-200 hover:border-gray-400' ||
+        !border && ''
+      }
+    `)
+  },
+  getFlexibleLayout: ({ children }: Pick<IconButtonProps, 'children'>) => {
+    return formatClassName(`
+      ${
+        /** Se o botão de ícone possuir um filho, então renderiza o layout flexível */
+        children  && 'flex justify-center items-center gap-1.5' ||
+        !children && ''
+      }
+    `)
+  },
+  getOpacity: ({ noOpacity }: Pick<IconButtonProps, 'noOpacity'>) => {
+    return formatClassName(`
+      ${
+        /** Se o botão de ícone possuir o atributo de opacidade, então renderiza a opacidade */
+        noOpacity  && 'opacity-100' ||
+        !noOpacity && 'opacity-80'
+      }
+    `)
+  }
 }
 
 export default IconButton

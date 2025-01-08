@@ -1,4 +1,4 @@
-import cx from 'clsx'
+import { formatClassName } from '@/utils/formatClassName'
 import Style from './style.module.css'
 
 type ListProps = {
@@ -18,11 +18,7 @@ const List: React.FC<ListProps> = ({
   return type === 'list' ? (
     <ul
       aria-label={label}
-      className={cx(
-        "mr-32 sm:mr-24",
-        Style.Scrollbar,
-        getScrollDirection(scroll),
-      )}
+      className={Css.getScrollbar({ scroll })}
     >
       {children}
     </ul>
@@ -37,24 +33,38 @@ const List: React.FC<ListProps> = ({
 
 const ListItem: React.FC<ListProps> = ({ label, scroll, children }): React.ReactNode => {
   return (
-    <li aria-label={label} className={getScrollListItem(scroll)}>
+    <li aria-label={label} className={Css.getScrollType({ scroll })}>
       {children}
     </li>
   )
 }
 
-const getScrollDirection = (scroll?: string): string => {
-  return cx({
-    'list-none overflow-auto whitespace-nowrap': scroll === 'horizontal',
-    'block list-none'                          : scroll === 'vertical',
-  })
-}
+const Css = {
+  getScrollbar: ({ scroll }: Pick<ListProps, 'scroll'>): string => {
+    return formatClassName(`
+      'mr-32 sm:mr-24'
 
-const getScrollListItem = (scroll?: string): string => {
-  return cx({
-    'inline-block': scroll === 'horizontal',
-    'block'       : scroll === 'vertical',
-  })
+      ${
+        /** Adiciona a classe de estilo do scroll */
+        Style.Scrollbar
+      }
+
+      ${
+        /** Seleciona a classe de acordo com a propriedade scroll */
+        scroll === 'horizontal' && 'list-none overflow-auto whitespace-nowrap' ||
+        scroll === 'vertical'   && 'block list-none'
+      }
+    `)
+  },
+  getScrollType: ({ scroll }: Pick<ListProps, 'scroll'>): string => {
+    return formatClassName(`
+      ${
+        /** Adiciona a classe de estilo do scroll */
+        scroll === 'horizontal' && 'inline-block' ||
+        scroll === 'vertical'   && 'block'
+      }
+    `)
+  }
 }
 
 export default List
