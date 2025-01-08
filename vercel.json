@@ -11,9 +11,7 @@
         }
       ],
       "source": "/api",
-      "destination": "/api.json",
-      "permanent": true,
-      "statusCode": 302
+      "destination": "/api.json"
     },
     {
       "missing": [
@@ -24,9 +22,7 @@
         }
       ],
       "source": "/api",
-      "destination": "/mentoria/web",
-      "permanent": true,
-      "statusCode": 302
+      "destination": "/mentoria/web"
     }
   ]
 }
