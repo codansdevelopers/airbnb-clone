@@ -1,19 +1,16 @@
-'use client'
-
 import Link from 'next/link'
 import { IconUserCircle } from '@tabler/icons-react'
-import { usePathname } from 'next/navigation'
 
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
 import Logo from '@/components/Logo'
 
-const TopBar = (): React.JSX.Element => {
-  const pathname = usePathname()
+type TopBarProps = {
+  isDynamicPath: boolean
+  children?: React.ReactNode
+}
 
-  // Checa se a rota é um subpath dinâmico, como `/qualquer-coisa-slug`, se for, não exibe alguns itens.
-  const isDynamicPath = /[\w](.*)/.test(pathname)
-
+const TopBar = ({ children, isDynamicPath }: TopBarProps): React.JSX.Element => {
   return (
     <div className="hidden sm:block">
       <Boundary direction="top-sides">
@@ -21,7 +18,7 @@ const TopBar = (): React.JSX.Element => {
           <Logo />
 
           {isDynamicPath ? (
-            <>Hi</>
+            <>{children}</>
           ) : (
             <div className="flex gap-8">
               <Link className="font-semibold" href="/">
