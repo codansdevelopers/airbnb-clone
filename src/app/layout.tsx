@@ -2,7 +2,7 @@ import '@/globals.css'
 import { Metadata } from 'next'
 import { montserrat } from '@/fonts/google'
 
-import FooterLayout from '@/widgets/FooterLayout'
+import Footer from '@/layout/Footer'
 
 export const metadata: Metadata = {
   title: 'Airbnb | Locações por temporada, chalés, casas de praia e muito mais.',
@@ -20,10 +20,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-
-        <footer>
-          <FooterLayout />
-        </footer>
+        <Footer />
       </body>
     </html>
   )
