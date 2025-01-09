@@ -1,17 +1,24 @@
+'use client'
+
+import { usePathname } from "next/navigation"
+
 import SearchForm from "@/widgets/SearchForm"
 import TopBar from "@/widgets/TopBar"
 
-type HeaderProps = {
-  hideSearch?: boolean
-}
+const Header = (): React.JSX.Element => {
+  const pathname = usePathname()
 
-const Header = ({ hideSearch }: HeaderProps): React.JSX.Element => {
+  // Checa se a rota é um subpath dinâmico, como `/qualquer-coisa-slug`, se for, não exibe alguns itens.
+  const isDynamicPath = /[\w](.*)/.test(pathname)
+
   return (
     <header className="">
-      <TopBar />
+      <TopBar isDynamicPath={isDynamicPath}>
+        <SearchForm />
+      </TopBar>
 
-      {/* Caso hideSearch seja falso, renderiza o componente SearchForm. */}
-      {!hideSearch && (
+      {/* Não renderiza o SearchForm de qualquer jeito em subpaths */}
+      {!isDynamicPath && (
         <SearchForm />
       )}
     </header>
