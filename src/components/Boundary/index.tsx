@@ -1,4 +1,8 @@
+'use client'
+
 import { formatClassName } from '@/utils/formatClassName'
+import { isDynamicPath } from '@/utils/isDynamicPath'
+import { usePathname } from 'next/navigation'
 
 type BoundaryProps = {
   children: React.ReactNode
@@ -6,7 +10,7 @@ type BoundaryProps = {
   role?: React.AriaRole
 }
 
-const Boundary: React.FC<BoundaryProps> = ({ direction, role, children }) => {
+const Boundary = ({ direction, role, children }: BoundaryProps) => {
   return (
     <div role={role} className={Css.getBoundary({ direction })}>
       {children}
@@ -16,8 +20,13 @@ const Boundary: React.FC<BoundaryProps> = ({ direction, role, children }) => {
 
 const Css = {
   getBoundary: ({ direction }: Pick<BoundaryProps, 'direction'>) => {
+    const pathname = usePathname()
+
     return formatClassName(`
-      max-w-screen-2xl mx-auto
+      mx-auto
+
+      ${isDynamicPath(pathname) ? 'max-w-6xl' : 'max-w-screen-2xl'}
+
       ${
         /** Seleciona a classe de acordo com a propriedade direction */
         direction === 'around'    && 'px-6 sm:px-10' ||
