@@ -12,9 +12,9 @@ const Header = (): React.JSX.Element => {
   const isDynamicPath = /[\w](.*)/.test(pathname)
 
   return (
-    <header className="">
+    <header>
       <TopBar isDynamicPath={isDynamicPath}>
-        <SearchForm />
+        <SearchForm compact={true} />
       </TopBar>
 
       {/* Não renderiza o SearchForm de qualquer jeito em subpaths */}
