@@ -2,6 +2,7 @@ import '@/globals.css'
 import { Metadata } from 'next'
 import { montserrat } from '@/fonts/google'
 
+import Header from '@/layout/Header'
 import Footer from '@/layout/Footer'
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={montserrat.variable}>
       <body>
+        <Header />
         <main>
           {children}
         </main>
