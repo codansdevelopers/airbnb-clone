@@ -32,7 +32,7 @@ export const getAccommodation = async (id: string): Promise<Accommodation | unde
     // Retorna os dados do post específico.
     // O método find() retorna o primeiro item que satisfaz a condição.
     const post = api.accommodation.find((item: Accommodation) => {
-      return item.id === id
+      return item.id === decodeURIComponent(id)
     })
 
     return post
