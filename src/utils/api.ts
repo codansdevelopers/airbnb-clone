@@ -7,12 +7,12 @@ const requestInit: RequestInit = {
   },
   headers: {
     'x-site-api': 'airbnb.com.br',
-  }
+  },
 }
 
 export const getApi = async (): Promise<PublicApi> => {
   try {
-    const response = await fetch('https://codans.com.br/api', requestInit)
+    const response = await fetch('https://web.codans.com.br', requestInit)
     const api: PublicApi = await response.json()
     // Retorna os dados da API.
     return api
@@ -24,11 +24,17 @@ export const getApi = async (): Promise<PublicApi> => {
   }
 }
 
-export const getAccommodation = async (id: string): Promise<Accommodation> => {
+export const getAccommodation = async (id: string): Promise<Accommodation | undefined> => {
   try {
-    const response = await fetch('https://codans.com.br/api/' + id, requestInit)
-    const post: Accommodation = await response.json()
+    const response = await fetch('https://web.codans.com.br', requestInit)
+    const api: PublicApi = await response.json()
+
     // Retorna os dados do post específico.
+    // O método find() retorna o primeiro item que satisfaz a condição.
+    const post = api.accommodation.find((item: Accommodation) => {
+      return item.id === id
+    })
+
     return post
   } catch (e) {
     // Fazer tratamento de erro aqui ou enviar para algum serviço de monitoramento.

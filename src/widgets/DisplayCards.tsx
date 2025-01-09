@@ -24,7 +24,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             thumbnails,
           }) => (
             <Card
-              key={id}
+              key={crypto.randomUUID()}
               hasBadge={hasBadge}
               title={location.description}
               host={host}
