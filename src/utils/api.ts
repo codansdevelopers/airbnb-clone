@@ -1,10 +1,6 @@
 import type { PublicApi, Accommodation } from '@/types/Api'
 
 const requestInit: RequestInit = {
-  cache: 'force-cache',
-  next: {
-    revalidate: 86400,
-  },
   headers: {
     'x-site-api': 'airbnb.com.br',
   },
