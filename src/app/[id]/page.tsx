@@ -41,7 +41,7 @@ export default async function Page({
 
   return (
     <Fragment>
-      <Header hideSearch={true} />
+      <Header />
       <Gallery thumbnails={post.thumbnails} />
       <AccomodationDescription />
     </Fragment>
