@@ -6,11 +6,11 @@ const AccommodationDescription = (): React.JSX.Element => {
   return (
     <Boundary direction="around">
       <div arial-label="Descrição">
-        <h2 className="font-medium">
+        <h2 className="font-medium sm:text-xl">
           Espaço inteiro: casa de campo em Minas Gerais
         </h2>
 
-        <ul className="text-sm flex gap-2">
+        <ul className="flex gap-2 text-sm sm:text-base">
           <li>10 hóspedes</li>
           <li>5 quartos</li>
           <li>5 camas</li>
