@@ -8,8 +8,11 @@ import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
 import Logo from '@/components/Logo'
 
-const TopBar: React.FC = () => {
+const TopBar = (): React.JSX.Element => {
   const pathname = usePathname()
+
+  // Checa se a rota é um subpath dinâmico, como `/qualquer-coisa-slug`, se for, não exibe alguns itens.
+  const isDynamicPath = /[\w](.*)/.test(pathname)
 
   return (
     <div className="hidden sm:block">
@@ -17,14 +20,18 @@ const TopBar: React.FC = () => {
         <div className="flex justify-between items-center">
           <Logo />
 
-          <div className="flex gap-8">
-            <Link className="font-semibold" href="/">
-              Acomodações
-            </Link>
-            <Link className="opacity-60" href="#">
-              Experiências
-            </Link>
-          </div>
+          {isDynamicPath ? (
+            <>Hi</>
+          ) : (
+            <div className="flex gap-8">
+              <Link className="font-semibold" href="/">
+                Acomodações
+              </Link>
+              <Link className="opacity-60" href="#">
+                Experiências
+              </Link>
+            </div>
+          )}
 
           <div>
             <IconButton
