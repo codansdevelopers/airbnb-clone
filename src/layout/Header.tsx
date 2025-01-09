@@ -1,11 +1,19 @@
 import SearchForm from "@/widgets/SearchForm"
 import TopBar from "@/widgets/TopBar"
 
-const Header = (): React.JSX.Element => {
+type HeaderProps = {
+  hideSearch?: boolean
+}
+
+const Header = ({ hideSearch }: HeaderProps): React.JSX.Element => {
   return (
     <header className="">
       <TopBar />
-      <SearchForm />
+
+      {/* Caso hideSearch seja falso, renderiza o componente SearchForm. */}
+      {!hideSearch && (
+        <SearchForm />
+      )}
     </header>
   )
 }
