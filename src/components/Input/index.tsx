@@ -1,13 +1,15 @@
 import { useId } from "react"
+import { formatClassName } from "@/utils/formatClassName"
 
 type InputProps = {
   children: React.ReactNode | React.ReactNode[]
+  compact?: boolean
   label: string
   name: string
   type: string
 }
 
-const Input: React.FC<InputProps> = ({ children, label, name, type }) => {
+const Input = ({ children, compact, label, name, type }: InputProps): React.JSX.Element => {
   const id = useId()
 
   return (
@@ -22,7 +24,10 @@ const Input: React.FC<InputProps> = ({ children, label, name, type }) => {
       </label>
 
       <input
-        className="w-full py-2 sm:p-4 focus:outline-none bg-transparent"
+        className={formatClassName(`
+          w-full py-2 focus:outline-none bg-transparent
+          ${compact ? "text-sm sm:p-0 sm:mx-6" : "sm:p-4"}
+        `)}
         id={id}
         name={name}
         type={type}
