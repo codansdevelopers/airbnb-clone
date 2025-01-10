@@ -1,13 +1,30 @@
-import { IconStarFilled, IconPhoto, IconToolsKitchen2, IconDesk, IconPool, IconBrandCarbon, IconSailboat, IconWifi, IconParking, IconAlarmSmoke, IconDog } from '@tabler/icons-react'
+import Image from 'next/image'
+import {
+  IconStarFilled,
+  IconPhoto,
+  IconToolsKitchen2,
+  IconDesk,
+  IconPool,
+  IconBrandCarbon,
+  IconSailboat,
+  IconWifi,
+  IconParking,
+  IconAlarmSmoke,
+  IconDog,
+  IconStarHalfFilled,
+} from '@tabler/icons-react'
 import type { Accommodation } from '@/types/Api'
 
+import { getRandomProfile } from '@/utils/api'
 import Boundary from '@/components/Boundary'
 
 type AccommodationDescriptionProps = {
   post: Accommodation
 }
 
-const AccommodationDescription = ({ post }: AccommodationDescriptionProps): React.JSX.Element => {
+const AccommodationDescription = async ({ post }: AccommodationDescriptionProps): Promise<React.JSX.Element> => {
+  const profile = await getRandomProfile()
+
   return (
     <Boundary direction="top-sides">
       <div className="grid gap-12 sm:grid-cols-12">
@@ -94,8 +111,58 @@ const AccommodationDescription = ({ post }: AccommodationDescriptionProps): Reac
 
             <span className="mt-1.5 inline-flex items-center gap-0.5">
               <IconStarFilled className="size-4" />
-              <span className="text-sm">4.9 (20 avaliações)</span>
+              <span className="text-sm">4.9 (400+ avaliações)</span>
             </span>
+          </div>
+
+          <div>
+            <div className="">
+              <div className="mt-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <Image
+                      className="w-12 h-12 rounded-full"
+                      src={profile.picture.thumbnail}
+                      alt={profile.name.first}
+                      width={48}
+                      height={48}
+                    />
+                  </div>
+
+                  {/* Descrição */}
+                  <div>
+                    <header className="flex flex-col gap-2">
+                      <div className="flex flex-col">
+                        <h3 className="font-semibold">
+                          {profile.name.first}
+                        </h3>
+                        <span className="text-xs">
+                          14 anos no Airbnb
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <span className="flex gap-0.5">
+                          <IconStarFilled className="size-2.5" />
+                          <IconStarFilled className="size-2.5" />
+                          <IconStarFilled className="size-2.5" />
+                          <IconStarFilled className="size-2.5" />
+                          <IconStarHalfFilled className="size-2.5" />
+                        </span>
+                        <span className="text-xs">5 dias atrás</span>
+                        <span className="text-xs">Ficou uma noite</span>
+                      </div>
+                    </header>
+
+                    <div className="mt-2">
+                      <p className="text-sm">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam, aspernatur voluptatem, veniam, ea incidunt quas corrupti doloribus at unde facilis impedit!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
