@@ -5,6 +5,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'web.codans.com.br',
+      },
+      {
+        protocol: 'https',
+        hostname: 'randomuser.me'
       }
     ],
   }
