@@ -35,7 +35,7 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
               Espaço inteiro: casa de campo em Minas Gerais
             </h2>
 
-            <ul className="text-sm sm:text-lg">
+            <ul className="text-sm sm:text-base">
               <li className="inline-block">
                 10 hóspedes
               </li>
@@ -133,14 +133,14 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
           </div>
 
           <div>
-            <div className="">
-              <div className="mt-6">
+            {post.commenters.map((commenter) => (
+              <div id={crypto.randomUUID()} className="mt-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       className="w-12 h-12 rounded-full"
-                      src={profile.picture.thumbnail}
-                      alt={profile.name.first}
+                      src={commenter.image}
+                      alt={commenter.name}
                       width={48}
                       height={48}
                     />
@@ -151,10 +151,10 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
                     <header className="flex flex-col gap-2">
                       <div className="flex flex-col">
                         <h3 className="font-semibold">
-                          {profile.name.first}
+                          {commenter.name}
                         </h3>
                         <span className="text-xs">
-                          14 anos no Airbnb
+                          {commenter.customerTime} anos no Airbnb
                         </span>
                       </div>
 
@@ -166,20 +166,20 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
                           <IconStarFilled className="size-2.5" />
                           <IconStarHalfFilled className="size-2.5" />
                         </span>
-                        <span className="text-xs">5 dias atrás</span>
-                        <span className="text-xs">Ficou uma noite</span>
+                        <span className="text-xs">{commenter.createdAt} dias atrás</span>
+                        <span className="text-xs">Ficou {commenter.stayedAt} noite(s)</span>
                       </div>
                     </header>
 
                     <div className="mt-2">
                       <p className="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam, aspernatur voluptatem, veniam, ea incidunt quas corrupti doloribus at unde facilis impedit!
+                        {commenter.comment}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

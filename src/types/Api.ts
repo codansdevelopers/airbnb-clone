@@ -4,6 +4,7 @@ export type PublicApi = {
 }
 
 export type Accommodation = {
+  commenters: Commenter[]
   date: string
   hasBadge: boolean
   host: string
@@ -19,6 +20,16 @@ export type Picture = {
   source: string
   description: string
   url: string
+}
+
+type Commenter = {
+  name: string
+  image: string
+  comment: string
+  rating: number
+  customerTime: number
+  createdAt: number
+  stayedAt: number
 }
 
 type Location = {

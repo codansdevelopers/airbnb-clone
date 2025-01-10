@@ -69,7 +69,7 @@ const createGalleryThumbnails = ({ id, source, description }: Picture): React.JS
       <Image
         width={1280}
         height={720}
-        className="w-full border-none object-cover aspect-video"
+        className="w-full border-none object-cover aspect-video 2xl:aspect-square"
         src={source}
         alt={description}
       />
