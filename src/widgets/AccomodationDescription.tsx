@@ -35,7 +35,7 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
               Espaço inteiro: casa de campo em Minas Gerais
             </h2>
 
-            <ul className="flex gap-2 text-sm sm:text-lg">
+            <ul className="flex gap-2 list-disc list-inside text-sm sm:text-lg">
               <li>10 hóspedes</li>
               <li>5 quartos</li>
               <li>5 camas</li>
