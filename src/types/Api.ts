@@ -27,3 +27,25 @@ type Location = {
   state: string
   country: string
 }
+
+export type ProfileApi = {
+  results: Profile[]
+}
+
+export type Profile = {
+  gender: string
+  name: Name
+  picture: Photo
+}
+
+type Name = {
+  title: string
+  first: string
+  last: string
+}
+
+type Photo = {
+  large: string
+  medium: string
+  thumbnail: string
+}
