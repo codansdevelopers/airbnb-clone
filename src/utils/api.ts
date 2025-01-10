@@ -44,7 +44,7 @@ export const getRandomProfile = async (): Promise<Profile> => {
   try {
     const response = await fetch('https://randomuser.me/api/?nat=br')
     const api: ProfileApi = await response.json()
-    
+
     // Retorna um perfil aleatório.
     return api.results[0]
   } catch (e) {
