@@ -130,14 +130,14 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
           </div>
 
           <div>
-            {post.commenters.map((commenter) => (
-              <div id={crypto.randomUUID()} className="mt-6">
+            {post.feedbacks.map((feedback) => (
+              <div key={crypto.randomUUID()} className="mt-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       className="w-12 h-12 rounded-full"
-                      src={commenter.image}
-                      alt={commenter.name}
+                      src={feedback.image}
+                      alt={feedback.name}
                       width={48}
                       height={48}
                     />
@@ -148,37 +148,37 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
                     <header className="flex flex-col gap-2">
                       <div className="flex flex-col">
                         <h3 className="font-semibold">
-                          {commenter.name}
+                          {feedback.name}
                         </h3>
                         <span className="text-xs">
-                          {commenter.customerTime} anos no Airbnb
+                          {feedback.customerTime} anos no Airbnb
                         </span>
                       </div>
 
                       <ul className="flex items-center">
                         <li className="flex gap-0.5">
-                          <Rating rating={commenter.rating} size={12} />
+                          <Rating rating={feedback.rating} size={12} />
                         </li>
                         <li className="text-xs">
                           <span className="mx-1.5">
                             &middot;
                           </span>
                           <span className="font-medium">
-                            {commenter.createdAt} dias atrás
+                            {feedback.createdAt} dias atrás
                           </span>
                         </li>
                         <li className="text-xs">
                           <span className="mx-1.5">
                             &middot;
                           </span>
-                          Ficou {commenter.stayedAt} noite(s)
+                          Ficou {feedback.stayedAt} noite(s)
                         </li>
                       </ul>
                     </header>
 
                     <div className="mt-2">
                       <p className="text-sm">
-                        {commenter.comment}
+                        {feedback.comment}
                       </p>
                     </div>
                   </div>

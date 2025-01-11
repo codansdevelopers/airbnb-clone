@@ -4,8 +4,8 @@ export type PublicApi = {
 }
 
 export type Accommodation = {
-  commenters: Feedback[]
   date: string
+  feedbacks: Feedback[]
   hasBadge: boolean
   host: string
   id: string
