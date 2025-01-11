@@ -11,20 +11,17 @@ import {
   IconParking,
   IconAlarmSmoke,
   IconDog,
-  IconStarHalfFilled,
 } from '@tabler/icons-react'
 import type { Accommodation } from '@/types/Api'
 
-import { getRandomProfile } from '@/utils/api'
 import Boundary from '@/components/Boundary'
+import Rating from '@/components/Rating'
 
 type AccommodationDescriptionProps = {
   post: Accommodation
 }
 
 const AccommodationDescription = async ({ post }: AccommodationDescriptionProps): Promise<React.JSX.Element> => {
-  const profile = await getRandomProfile()
-
   return (
     <Boundary direction="top-sides">
       <div className="grid gap-12 sm:grid-cols-12">
@@ -158,17 +155,25 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
                         </span>
                       </div>
 
-                      <div className="flex items-center gap-2">
-                        <span className="flex gap-0.5">
-                          <IconStarFilled className="size-2.5" />
-                          <IconStarFilled className="size-2.5" />
-                          <IconStarFilled className="size-2.5" />
-                          <IconStarFilled className="size-2.5" />
-                          <IconStarHalfFilled className="size-2.5" />
-                        </span>
-                        <span className="text-xs">{commenter.createdAt} dias atrás</span>
-                        <span className="text-xs">Ficou {commenter.stayedAt} noite(s)</span>
-                      </div>
+                      <ul className="flex items-center">
+                        <li className="flex gap-0.5">
+                          <Rating rating={commenter.rating} size={12} />
+                        </li>
+                        <li className="text-xs">
+                          <span className="mx-1.5">
+                            &middot;
+                          </span>
+                          <span className="font-medium">
+                            {commenter.createdAt} dias atrás
+                          </span>
+                        </li>
+                        <li className="text-xs">
+                          <span className="mx-1.5">
+                            &middot;
+                          </span>
+                          Ficou {commenter.stayedAt} noite(s)
+                        </li>
+                      </ul>
                     </header>
 
                     <div className="mt-2">

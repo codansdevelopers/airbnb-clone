@@ -1,4 +1,4 @@
-import type { ProfileApi, Profile, PublicApi, Accommodation } from '@/types/Api'
+import type { PublicApi, Accommodation } from '@/types/Api'
 
 const requestInit: RequestInit = {
   headers: {
@@ -32,21 +32,6 @@ export const getAccommodation = async (id: string): Promise<Accommodation | unde
     })
 
     return post
-  } catch (e) {
-    // Fazer tratamento de erro aqui ou enviar para algum serviço de monitoramento.
-    // Por enquanto, só vamos logar o erro no console.
-    console.error(e)
-    throw e
-  }
-}
-
-export const getRandomProfile = async (): Promise<Profile> => {
-  try {
-    const response = await fetch('https://randomuser.me/api/?nat=br')
-    const api: ProfileApi = await response.json()
-
-    // Retorna um perfil aleatório.
-    return api.results[0]
   } catch (e) {
     // Fazer tratamento de erro aqui ou enviar para algum serviço de monitoramento.
     // Por enquanto, só vamos logar o erro no console.
