@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   // Referência: https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes
   return api.accommodation.map((post) => {
     return {
-      id: post.id,
+      id: post.slug,
     }
   })
 }
@@ -40,7 +40,7 @@ export default async function Page({
 
   return (
     <Fragment>
-      <Gallery thumbnails={post.thumbnails} />
+      <Gallery thumbnails={post.photos} />
       <AccomodationDescription post={post} />
     </Fragment>
   )

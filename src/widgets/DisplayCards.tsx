@@ -17,18 +17,19 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
             id,
             location,
             hasBadge,
+            slug,
             host,
             date,
             price,
             rating,
-            thumbnails,
+            photos,
           }) => (
             <Card
-              key={crypto.randomUUID()}
+              key={id}
               hasBadge={hasBadge}
               title={location.description}
               host={host}
-              href={id}
+              href={slug}
               duration={date}
               price={price}
               rating={rating}
@@ -37,8 +38,8 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
                 className="w-full border-none object-cover aspect-square"
                 width={300}
                 height={300}
-                src={thumbnails[0].source}
-                alt={thumbnails[0].description}
+                src={photos[0].source}
+                alt={photos[0].description}
               />
             </Card>
           ))}

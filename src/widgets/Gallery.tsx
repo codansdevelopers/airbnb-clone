@@ -1,11 +1,11 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
 
-import type { Picture } from '@/types/Api'
+import type { Photo } from '@/types/Api'
 import Boundary from "@/components/Boundary"
 
 type GalleryProps = {
-  thumbnails: Picture[]
+  thumbnails: Photo[]
 }
 
 const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element> => {
@@ -63,7 +63,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
   )
 }
 
-const createGalleryThumbnails = ({ id, source, description }: Picture): React.JSX.Element => {
+const createGalleryThumbnails = ({ id, source, description }: Photo): React.JSX.Element => {
   return (
     <figure key={id}>
       <Image
