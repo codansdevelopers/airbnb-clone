@@ -1,11 +1,11 @@
 import Boundary from '@/components/Boundary'
 
-const Footer = (): React.JSX.Element => {
+const FooterContent = (): React.JSX.Element => {
   // Ano atual
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-100">
+    <div className="bg-gray-100">
       <Boundary direction="around">
         <div className="py-4">
           <h4>&copy; {year} Airbnb, Inc.</h4>
@@ -18,8 +18,8 @@ const Footer = (): React.JSX.Element => {
           </ul>
         </div>
       </Boundary>
-    </footer>
+    </div>
   )
 }
 
-export default Footer
+export default FooterContent
