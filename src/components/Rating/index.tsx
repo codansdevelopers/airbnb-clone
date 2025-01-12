@@ -17,9 +17,9 @@ const Rating = ({ rating, size }: RatingProps): React.JSX.Element => {
 
   return (
     <>
-      {fullStars.map(() => <IconStarFilled size={size} />)}
-      {halfStars && <IconStarHalfFilled size={size} />}
-      {emptyStars.map(() => <IconStar size={size} />)}
+      {fullStars.map(() => <IconStarFilled key={crypto.randomUUID()} size={size} />)}
+      {halfStars && <IconStarHalfFilled key={crypto.randomUUID()} size={size} />}
+      {emptyStars.map(() => <IconStar key={crypto.randomUUID()} size={size} />)}
     </>
   )
 }
