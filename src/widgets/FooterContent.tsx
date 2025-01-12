@@ -5,8 +5,8 @@ const FooterContent = (): React.JSX.Element => {
   const year = new Date().getFullYear()
 
   return (
-    <div className="bg-gray-100 mt-8">
-      <Boundary direction="around">
+    <div className="bg-gray-100">
+      <Boundary>
         <div className="py-4">
           <h4>&copy; {year} Airbnb, Inc.</h4>
 

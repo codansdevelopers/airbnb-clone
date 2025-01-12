@@ -15,7 +15,7 @@ import Typography from '@/components/Typography'
 
 const AccommodationDescription = async (): Promise<React.JSX.Element> => {
   return (
-    <section className="col-span-6">
+    <div>
       <div className="mt-2">
         <Typography as="h2" variant="title">
           Espaço inteiro: casa de campo em Minas Gerais
@@ -94,7 +94,7 @@ const AccommodationDescription = async (): Promise<React.JSX.Element> => {
           </li>
         </ul>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ type TestimonialProps = {
 
 export const Testimonial = ({ testimonials }: TestimonialProps): React.JSX.Element => {
   return (
-    <div className="col-span-6">
+    <div>
       <div className="mt-2">
         <Typography as="h2" variant="display">
           Depoimentos

@@ -58,8 +58,12 @@ export default async function Page({
             Rancho da Lua, tranquilo e rodeado por montanhas
           </Typography>
           <Gallery thumbnails={post.photos} />
-          <AccomodationDescription />
-          <Testimonial testimonials={post.testimonials} />
+
+          {/* Grid */}
+          <section className="grid grid-cols-2">
+            <AccomodationDescription />
+            <Testimonial testimonials={post.testimonials} />
+          </section>
         </Boundary>
       </main>
 

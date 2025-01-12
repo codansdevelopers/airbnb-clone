@@ -13,7 +13,7 @@ type TopBarProps = {
 const TopBar = ({ children, showNavigation }: TopBarProps): React.JSX.Element => {
   return (
     <div className="hidden sm:block">
-      <Boundary direction="top-sides">
+      <Boundary compact={!showNavigation}>
         <div className="flex justify-between items-center">
           <Logo />
 
