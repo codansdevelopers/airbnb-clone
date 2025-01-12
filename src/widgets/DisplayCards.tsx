@@ -11,7 +11,7 @@ const DisplayCards = async (): Promise<React.JSX.Element> => {
 
   return (
     <section className="my-4">
-      <Boundary direction="top-sides">
+      <Boundary>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {response.accommodation.map(({
             id,

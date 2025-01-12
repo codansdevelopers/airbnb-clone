@@ -28,7 +28,7 @@ const HorizontalScrollTab: React.FC = async () => {
   ))
 
   return (
-    <Boundary direction="around">
+    <Boundary>
       <nav className="flex items-center">
         <ul
           style={{ scrollbarWidth: 'none' }}
