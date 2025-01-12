@@ -16,6 +16,8 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
   const offSet = 4
 
   const galleryThumbnails = thumbnails.map((picture, idx) => {
+    const { id, description, source, url } = picture
+
     // Pula a primeira imagem da galeria pois ela já foi exibida, como
     // thumbnail principal da galeria.
     if (idx === 0) {
@@ -25,7 +27,15 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
     // Exibe apenas as primeiras imagens da galeria.
     // O número de imagens exibidas é determinado pelo offSet.
     return idx < offSet + 1 && (
-      createGalleryThumbnails(picture)
+      <figure key={id}>
+        <Image
+          width={1280}
+          height={720}
+          className="w-full border-none object-cover aspect-video 2xl:aspect-square"
+          src={source}
+          alt={description}
+        />
+      </figure>
     )
   })
 
@@ -44,14 +54,18 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
 
       <Boundary direction="top-sides">
         <section className="my-4">
-          <h1 className="mb-4 text-2xl capitalize font-semibold">
-            {thumbnail.description}
-          </h1>
-
           {/* Grid de galeria de imagens online para telas maiores. Tablet, desktop, etc. */}
           <div className="hidden gap-2 sm:grid grid-cols-12 rounded-2xl overflow-hidden">
             <div className="col-span-6">
-              {createGalleryThumbnails(thumbnail)}
+              <figure key={thumbnail.id}>
+                <Image
+                  width={1280}
+                  height={720}
+                  className="w-full border-none object-cover aspect-video 2xl:aspect-square"
+                  src={thumbnail.source}
+                  alt={thumbnail.description}
+                />
+              </figure>
             </div>
             <div className="col-span-6 gap-2 grid grid-cols-2">
               {galleryThumbnails}
@@ -60,20 +74,6 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
         </section>
       </Boundary>
     </Fragment>
-  )
-}
-
-const createGalleryThumbnails = ({ id, source, description }: Photo): React.JSX.Element => {
-  return (
-    <figure key={id}>
-      <Image
-        width={1280}
-        height={720}
-        className="w-full border-none object-cover aspect-video 2xl:aspect-square"
-        src={source}
-        alt={description}
-      />
-    </figure>
   )
 }
 

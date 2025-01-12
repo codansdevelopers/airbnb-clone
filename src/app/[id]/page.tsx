@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation'
-
 import { getApi, getAccommodation } from '@/utils/api'
+
+import Boundary from '@/components/Boundary'
+import Typography from '@/components/Typography'
+
 import AccomodationDescription from '@/widgets/AccomodationDescription'
 import FooterContent from '@/widgets/FooterContent'
 import Gallery from '@/widgets/Gallery'
@@ -49,6 +52,11 @@ export default async function Page({
       </header>
 
       <main>
+        <Boundary direction="top-sides">
+          <Typography as="h1" variant="title">
+            Rancho da Lua, tranquilo e rodeado por montanhas
+          </Typography>
+        </Boundary>
         <Gallery thumbnails={post.photos} />
         <AccomodationDescription post={post} />
       </main>
