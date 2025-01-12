@@ -1,8 +1,8 @@
 import React from 'react'
 
 enum Typo {
-  Heading1 = 'text-2xl font-bold',
-  Heading2 = 'text-xl font-semibold',
+  Heading1 = 'text-2xl font-semibold',
+  Heading2 = 'text-xl font-medium',
   Heading3 = 'text-lg font-medium',
 }
 
