@@ -53,7 +53,7 @@ export default async function Page({
       </header>
 
       <main>
-        <Boundary direction="around">
+        <Boundary compact={true}>
           <Typography as="h1" variant="title">
             Rancho da Lua, tranquilo e rodeado por montanhas
           </Typography>
