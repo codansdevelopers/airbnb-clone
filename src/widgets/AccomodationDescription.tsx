@@ -16,6 +16,7 @@ import type { Accommodation } from '@/types/Api'
 
 import Boundary from '@/components/Boundary'
 import Rating from '@/components/Rating'
+import Typography from '@/components/Typography'
 
 type AccommodationDescriptionProps = {
   post: Accommodation
@@ -28,9 +29,9 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
         {/* Descrição */}
         <div className="col-span-6">
           <div className="mt-2">
-            <h2 className="font-semibold sm:text-2xl">
+            <Typography as="h2" variant="title">
               Espaço inteiro: casa de campo em Minas Gerais
-            </h2>
+            </Typography>
 
             <ul className="text-sm sm:text-base">
               <li className="inline-block">
@@ -58,9 +59,9 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
           </div>
 
           <div className="mt-10">
-            <h2 className="text-xl font-semibold">
+            <Typography as="h2" variant="subtitle">
               O que esse lugar oferece?
-            </h2>
+            </Typography>
 
             <ul className="py-6 items-center grid grid-rows-5 grid-flow-col gap-y-6">
               <li className="flex gap-1.5">
@@ -119,9 +120,9 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
         {/* Depoimentos */}
         <div className="col-span-6">
           <div className="mt-2">
-            <h2 className="text-3xl">
+            <Typography as="h2" variant="display">
               Depoimentos
-            </h2>
+            </Typography>
 
             <span className="mt-1.5 inline-flex items-center gap-0.5">
               <IconStarFilled className="size-4" />
@@ -131,7 +132,7 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
 
           <div>
             {post.feedbacks.map((feedback) => (
-              <div key={crypto.randomUUID()} className="mt-6">
+              <div key={feedback.id} className="mt-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
                     <Image
@@ -147,9 +148,9 @@ const AccommodationDescription = async ({ post }: AccommodationDescriptionProps)
                   <div>
                     <header className="flex flex-col gap-2">
                       <div className="flex flex-col">
-                        <h3 className="font-semibold">
+                        <Typography as="h3" variant="body2">
                           {feedback.name}
-                        </h3>
+                        </Typography>
                         <span className="text-xs">
                           {feedback.customerTime} anos no Airbnb
                         </span>

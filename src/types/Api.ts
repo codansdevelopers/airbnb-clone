@@ -1,16 +1,14 @@
-import { PrefetchOptions } from "next/dist/shared/lib/router/router"
-
 export type PublicApi = {
   accommodation: Accommodation[]
   icons: Photo[]
 }
 
 export type Accommodation = {
+  id: string
   date: string
   feedbacks: Feedback[]
   hasBadge: boolean
   host: string
-  id: string
   slug: string
   location: Location
   price: number
@@ -26,6 +24,7 @@ export type Photo = {
 }
 
 type Feedback = {
+  id: string
   name: string
   image: string
   comment: string
