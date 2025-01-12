@@ -1,3 +1,5 @@
+import HorizontalRule from '@/components/HorizontalRule'
+
 import DisplayCards from '@/widgets/DisplayCards'
 import FooterContent from '@/widgets/FooterContent'
 import HorizontalScrollTab from '@/widgets/HorizontalScrollTab'
@@ -8,9 +10,15 @@ export default async function Page() {
   return (
     <>
       <header>
-        <TopBar showNavigation={true} />
-        <SearchForm />
+        <div className="py-2">
+          <TopBar showNavigation={true} />
+          <SearchForm />
+        </div>
       </header>
+
+      <div className="py-2">
+        <HorizontalRule />
+      </div>
 
       <main>
         <HorizontalScrollTab />
