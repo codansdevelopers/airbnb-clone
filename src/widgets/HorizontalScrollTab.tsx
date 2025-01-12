@@ -4,7 +4,6 @@ import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
 import { getApi } from '@/utils/api'
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'
-import List from '@/components/List'
 import Tab from '@/components/Tab'
 
 const HorizontalScrollTab: React.FC = async () => {
@@ -15,7 +14,7 @@ const HorizontalScrollTab: React.FC = async () => {
   // Mapeia os ícones da resposta da API para o componente Tab.
   // Cada ícone é um item da lista.
   const tabs = response.icons.map((icon) => (
-    <List key={icon.id} label="Tab" scroll="horizontal" type="item">
+    <li key={icon.id} className="inline-block">
       <Link href="#">
         <Tab
           title={icon.description}
@@ -25,37 +24,36 @@ const HorizontalScrollTab: React.FC = async () => {
           }}
         />
       </Link>
-    </List>
+    </li>
   ))
 
   return (
-    <div className="mt-6 pt-6 border-t border-gray-200">
-      <Boundary direction="around">
-        <nav className="relative">
-          <List label="Categories" scroll="horizontal" type="list">
-            {tabs}
-            <List label="Interactive" scroll="horizontal" type="item">
-              <div className="h-full absolute top-0 right-0 flex items-center bg-white">
-                <IconButton
-                  background="transparent"
-                  border={true}
-                  title="Filtro"
-                  type="button"
-                  icon={(
-                    <IconAdjustmentsHorizontal
-                      arial-label="Ícone de ajustes"
-                      size={20}
-                    /> 
-                  )}
-                >
-                  Filtros
-                </IconButton>
-              </div>
-            </List>
-          </List>
-       </nav>
-      </Boundary>
-    </div>
+    <Boundary direction="around">
+      <nav className="flex items-center">
+        <ul
+          style={{ scrollbarWidth: 'none' }}
+          className="list-none overflow-auto whitespace-nowrap"
+        >
+          {tabs}
+        </ul>
+        <div className="flex items-center bg-white">
+          <IconButton
+            background="transparent"
+            border={true}
+            title="Filtro"
+            type="button"
+            icon={(
+              <IconAdjustmentsHorizontal
+                arial-label="Ícone de ajustes"
+                size={20}
+              /> 
+            )}
+          >
+            Filtros
+          </IconButton>
+        </div>
+     </nav>
+    </Boundary>
   )
 }
 
