@@ -6,14 +6,15 @@ import IconButton from '@/components/IconButton'
 import Logo from '@/components/Logo'
 
 type TopBarProps = {
+  compact?: boolean
   showNavigation?: boolean
   children?: React.ReactNode
 }
 
-const TopBar = ({ children, showNavigation }: TopBarProps): React.JSX.Element => {
+const TopBar = ({ children, compact, showNavigation }: TopBarProps): React.JSX.Element => {
   return (
     <div className="hidden sm:block">
-      <Boundary compact={!showNavigation}>
+      <Boundary compact={compact}>
         <div className="flex justify-between items-center">
           <Logo />
 

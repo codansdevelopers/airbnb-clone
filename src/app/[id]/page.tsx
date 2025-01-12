@@ -47,28 +47,35 @@ export default async function Page({
   return (
     <>
       <header>
-        <TopBar showNavigation={false}>
-          <SearchForm compact={true} />
-        </TopBar>
+        <div className="py-2">
+          <TopBar compact={true} showNavigation={false}>
+            <SearchForm compact={true} />
+          </TopBar>
+        </div>
       </header>
 
       <main>
         <Boundary compact={true}>
-          <Typography as="h1" variant="title">
-            Rancho da Lua, tranquilo e rodeado por montanhas
-          </Typography>
+          <div className="py-4">
+            <Typography as="h1" variant="title">
+              Rancho da Lua, tranquilo e rodeado por montanhas
+            </Typography>
+          </div>
+
           <Gallery thumbnails={post.photos} />
 
           {/* Grid */}
-          <section className="grid grid-cols-2">
-            <AccomodationDescription />
-            <Testimonial testimonials={post.testimonials} />
+          <section className="py-4">
+            <div className="grid grid-cols-2 gap-6">
+              <AccomodationDescription />
+              <Testimonial testimonials={post.testimonials} />
+            </div>
           </section>
         </Boundary>
       </main>
 
       <footer>
-        <FooterContent />
+        <FooterContent compact={true} />
       </footer>
     </>
   )

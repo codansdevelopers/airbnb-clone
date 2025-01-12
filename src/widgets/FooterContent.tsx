@@ -1,12 +1,16 @@
 import Boundary from '@/components/Boundary'
 
-const FooterContent = (): React.JSX.Element => {
+type FooterContentProps = {
+  compact?: boolean
+}
+
+const FooterContent = ({ compact }: FooterContentProps): React.JSX.Element => {
   // Ano atual
   const year = new Date().getFullYear()
 
   return (
     <div className="bg-gray-100">
-      <Boundary>
+      <Boundary compact={compact}>
         <div className="py-4">
           <h4>&copy; {year} Airbnb, Inc.</h4>
 
