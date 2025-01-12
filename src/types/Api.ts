@@ -6,7 +6,7 @@ export type PublicApi = {
 export type Accommodation = {
   id: string
   date: string
-  feedbacks: Feedback[]
+  testimonials: Testimonials[]
   hasBadge: boolean
   host: string
   slug: string
@@ -23,7 +23,7 @@ export type Photo = {
   url: string
 }
 
-type Feedback = {
+export type Testimonials = {
   id: string
   name: string
   image: string

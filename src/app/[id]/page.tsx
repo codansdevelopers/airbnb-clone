@@ -8,6 +8,7 @@ import AccomodationDescription from '@/widgets/AccomodationDescription'
 import FooterContent from '@/widgets/FooterContent'
 import Gallery from '@/widgets/Gallery'
 import SearchForm from '@/widgets/SearchForm'
+import Testimonial from '@/widgets/Testimonial'
 import TopBar from '@/widgets/TopBar'
 
 type PageProps = {
@@ -58,7 +59,8 @@ export default async function Page({
           </Typography>
         </Boundary>
         <Gallery thumbnails={post.photos} />
-        <AccomodationDescription post={post} />
+        <AccomodationDescription />
+        <Testimonial testimonials={post.testimonials} />
       </main>
 
       <footer>
