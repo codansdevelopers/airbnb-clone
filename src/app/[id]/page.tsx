@@ -1,9 +1,11 @@
-import { Fragment } from 'react'
 import { notFound } from 'next/navigation'
 
 import { getApi, getAccommodation } from '@/utils/api'
 import AccomodationDescription from '@/widgets/AccomodationDescription'
+import FooterContent from '@/widgets/FooterContent'
 import Gallery from '@/widgets/Gallery'
+import SearchForm from '@/widgets/SearchForm'
+import TopBar from '@/widgets/TopBar'
 
 type PageProps = {
   id: string
@@ -39,9 +41,21 @@ export default async function Page({
   }
 
   return (
-    <Fragment>
-      <Gallery thumbnails={post.photos} />
-      <AccomodationDescription post={post} />
-    </Fragment>
+    <>
+      <header>
+        <TopBar showNavigation={false}>
+          <SearchForm compact={true} />
+        </TopBar>
+      </header>
+
+      <main>
+        <Gallery thumbnails={post.photos} />
+        <AccomodationDescription post={post} />
+      </main>
+
+      <footer>
+        <FooterContent />
+      </footer>
+    </>
   )
 }
