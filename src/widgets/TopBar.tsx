@@ -6,20 +6,18 @@ import IconButton from '@/components/IconButton'
 import Logo from '@/components/Logo'
 
 type TopBarProps = {
-  isDynamicPath: boolean
+  showNavigation?: boolean
   children?: React.ReactNode
 }
 
-const TopBar = ({ children, isDynamicPath }: TopBarProps): React.JSX.Element => {
+const TopBar = ({ children, showNavigation }: TopBarProps): React.JSX.Element => {
   return (
     <div className="hidden sm:block">
       <Boundary direction="top-sides">
         <div className="flex justify-between items-center">
           <Logo />
 
-          {isDynamicPath ? (
-            <>{children}</>
-          ) : (
+          {showNavigation ? (
             <div className="flex gap-8">
               <Link className="font-semibold" href="/">
                 Acomodações
@@ -28,6 +26,8 @@ const TopBar = ({ children, isDynamicPath }: TopBarProps): React.JSX.Element => 
                 Experiências
               </Link>
             </div>
+          ) : (
+            <>{children}</>
           )}
 
           <div>
