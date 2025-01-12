@@ -9,7 +9,7 @@ import {
   IconParking,
   IconAlarmSmoke,
   IconDog,
-} from '@tabler/icons-react'
+} from '@/assets/icons'
 
 import Typography from '@/components/Typography'
 

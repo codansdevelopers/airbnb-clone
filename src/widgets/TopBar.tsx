@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IconUserCircle } from '@tabler/icons-react'
+import { IconUserCircle } from '@/assets/icons'
 
 import Boundary from '@/components/Boundary'
 import IconButton from '@/components/IconButton'

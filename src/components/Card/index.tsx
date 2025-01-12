@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IconHeart, IconStarFilled } from '@tabler/icons-react'
+import { IconHeart, IconStarFilled } from '@/assets/icons'
 
 import Badge from '@/components/Badge'
 import IconButton from '@/components/IconButton'

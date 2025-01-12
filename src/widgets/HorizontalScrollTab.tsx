@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { IconAdjustmentsHorizontal } from '@tabler/icons-react'
+import { IconAdjustmentsHorizontal } from '@/assets/icons'
 
 import { getApi } from '@/utils/api'
 import Boundary from '@/components/Boundary'

@@ -1,4 +1,4 @@
-import { IconStar, IconStarFilled, IconStarHalfFilled } from "@tabler/icons-react";
+import { IconStar, IconStarFilled, IconStarHalfFilled } from '@/assets/icons'
 
 type RatingProps = {
   rating: number

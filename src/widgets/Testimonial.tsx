@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { IconStarFilled } from "@tabler/icons-react"
+import { IconStarFilled } from "@/assets/icons"
 import type { Testimonials } from '@/types/Api'
 
 import Rating from "@/components/Rating"

@@ -1,4 +1,4 @@
-import { IconSearch } from '@tabler/icons-react'
+import { IconSearch } from '@/assets/icons'
 import { formatClassName } from '@/utils/formatClassName'
 
 import IconButton from '@/components/IconButton'
