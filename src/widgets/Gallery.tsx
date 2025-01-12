@@ -1,8 +1,5 @@
-import { Fragment } from 'react'
 import Image from 'next/image'
-
 import type { Photo } from '@/types/Api'
-import Boundary from "@/components/Boundary"
 
 type GalleryProps = {
   thumbnails: Photo[]
@@ -29,6 +26,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
     return idx < offSet + 1 && (
       <figure key={id}>
         <Image
+          priority={true}
           width={1280}
           height={720}
           className="w-full border-none object-cover aspect-video 2xl:aspect-square"
@@ -40,7 +38,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
   })
 
   return (
-    <Fragment>
+    <>
       <div className="sm:hidden">
         <Image
           priority={true}
@@ -71,7 +69,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   )
 }
 
