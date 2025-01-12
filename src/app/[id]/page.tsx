@@ -53,14 +53,14 @@ export default async function Page({
       </header>
 
       <main>
-        <Boundary direction="top-sides">
+        <Boundary direction="around">
           <Typography as="h1" variant="title">
             Rancho da Lua, tranquilo e rodeado por montanhas
           </Typography>
+          <Gallery thumbnails={post.photos} />
+          <AccomodationDescription />
+          <Testimonial testimonials={post.testimonials} />
         </Boundary>
-        <Gallery thumbnails={post.photos} />
-        <AccomodationDescription />
-        <Testimonial testimonials={post.testimonials} />
       </main>
 
       <footer>
