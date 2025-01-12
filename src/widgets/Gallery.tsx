@@ -52,7 +52,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
         />
       </div>
 
-      <section className="my-4">
+      <section>
         {/* Grid de galeria de imagens online para telas maiores. Tablet, desktop, etc. */}
         <div className="hidden gap-2 sm:grid grid-cols-12 rounded-2xl overflow-hidden">
           <div className="col-span-6">
