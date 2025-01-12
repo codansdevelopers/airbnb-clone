@@ -58,7 +58,7 @@ export default async function Page({
         <Boundary compact={true}>
           <div className="py-4">
             <Typography as="h1" variant="title">
-              Rancho da Lua, tranquilo e rodeado por montanhas
+              {post.title}
             </Typography>
           </div>
 
@@ -66,7 +66,7 @@ export default async function Page({
 
           {/* Grid */}
           <section className="py-4">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 sm:gap-6">
               <AccomodationDescription />
               <Testimonial testimonials={post.testimonials} />
             </div>

@@ -5,6 +5,7 @@ export type PublicApi = {
 
 export type Accommodation = {
   id: string
+  title: string
   date: string
   testimonials: Testimonials[]
   hasBadge: boolean
