@@ -13,7 +13,7 @@ const Gallery = async ({ thumbnails }: GalleryProps): Promise<React.JSX.Element>
   const offSet = 4
 
   const galleryThumbnails = thumbnails.map((picture, idx) => {
-    const { id, description, source, url } = picture
+    const { id, description, source } = picture
 
     // Pula a primeira imagem da galeria pois ela já foi exibida, como
     // thumbnail principal da galeria.
