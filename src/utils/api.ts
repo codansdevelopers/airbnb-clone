@@ -1,14 +1,8 @@
 import type { PublicApi, Accommodation } from '@/types/Api'
 
-const requestInit: RequestInit = {
-  headers: {
-    'x-site-api': 'airbnb.com.br',
-  },
-}
-
 export const getApi = async (): Promise<PublicApi> => {
   try {
-    const response = await fetch('https://web.codans.com.br', requestInit)
+    const response = await fetch('https://web.codans.com.br/airbnb')
     const api: PublicApi = await response.json()
     // Retorna os dados da API.
     return api
@@ -22,7 +16,7 @@ export const getApi = async (): Promise<PublicApi> => {
 
 export const getAccommodation = async (id: string): Promise<Accommodation | undefined> => {
   try {
-    const response = await fetch('https://web.codans.com.br', requestInit)
+    const response = await fetch('https://web.codans.com.br/airbnb')
     const api: PublicApi = await response.json()
 
     // Retorna os dados do post específico.
