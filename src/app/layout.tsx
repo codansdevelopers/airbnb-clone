@@ -22,6 +22,12 @@ export default async function RootLayout({
           }}
           strategy='beforeInteractive'
         />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `!function(e,t,n,c,r,a,i){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},(a=t.createElement(c)).async=1,a.src="https://www.clarity.ms/tag/revi623wqy",(i=t.getElementsByTagName(c)[0]).parentNode.insertBefore(a,i)}(window,document,"clarity","script");`,
+          }}
+          strategy='beforeInteractive'
+        />
       </head>
       <body>{children}</body>
     </html>
